@@ -22,6 +22,7 @@ class QGCPalette;
 class QGCPositionManager;
 class SettingsManager;
 class SystemResourceMonitor;
+class ScriptRunner;
 class VideoManager;
 class QmlObjectListModel;
 
@@ -38,6 +39,7 @@ Q_MOC_INCLUDE("QGCPalette.h")
 Q_MOC_INCLUDE("PositionManager.h")
 Q_MOC_INCLUDE("SettingsManager.h")
 Q_MOC_INCLUDE("SystemResourceMonitor.h")
+Q_MOC_INCLUDE("ScriptRunner.h")
 Q_MOC_INCLUDE("VideoManager.h")
 
 class QGroundControlQmlGlobal : public QObject
@@ -75,6 +77,7 @@ public:
     Q_PROPERTY(MissionCommandTree*  missionCommandTree      READ    missionCommandTree      CONSTANT)
     Q_PROPERTY(MAVLinkSigningKeys*   mavlinkSigningKeys      READ    mavlinkSigningKeys      CONSTANT)
     Q_PROPERTY(SystemResourceMonitor* systemResourceMonitor  READ    systemResourceMonitor   CONSTANT)
+    Q_PROPERTY(ScriptRunner*          scriptRunner            READ    scriptRunner            CONSTANT)
 #ifndef QGC_NO_SERIAL_LINK
     Q_PROPERTY(FactGroup*           gpsRtk                  READ    gpsRtkFactGroup         CONSTANT)
 #endif
@@ -172,6 +175,7 @@ public:
     ADSBVehicleManager*     adsbVehicleManager  ()  { return _adsbVehicleManager; }
     NTRIPManager*           ntripManager        ()  { return _ntripManager; }
     SystemResourceMonitor*  systemResourceMonitor() { return _systemResourceMonitor; }
+    ScriptRunner*           scriptRunner        ()  { return _scriptRunner; }
     QmlUnitsConversion*     unitsConversion     ()  { return &_unitsConversion; }
     static QGeoCoordinate   flightMapPosition   ()  { return _coord; }
     static double           flightMapZoom       ()  { return _zoom; }
@@ -224,6 +228,7 @@ private:
     ADSBVehicleManager*     _adsbVehicleManager     = nullptr;
     NTRIPManager*           _ntripManager           = nullptr;
     SystemResourceMonitor*  _systemResourceMonitor  = nullptr;
+    ScriptRunner*           _scriptRunner           = nullptr;
     QGCPositionManager*     _qgcPositionManager     = nullptr;
     MissionCommandTree*     _missionCommandTree     = nullptr;
     MAVLinkSigningKeys*     _mavlinkSigningKeys     = nullptr;

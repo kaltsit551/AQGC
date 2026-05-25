@@ -15,6 +15,7 @@
 #include "MAVLinkSigningKeys.h"
 #include "MissionCommandTree.h"
 #include "SystemResourceMonitor.h"
+#include "ScriptRunner.h"
 #include "VideoManager.h"
 #include "MultiVehicleManager.h"
 #include "LoggingCategoryModel.h"
@@ -44,6 +45,7 @@ QGroundControlQmlGlobal::QGroundControlQmlGlobal(QObject *parent)
     , _adsbVehicleManager(ADSBVehicleManager::instance())
     , _ntripManager(NTRIPManager::instance())
     , _systemResourceMonitor(SystemResourceMonitor::instance())
+    , _scriptRunner(ScriptRunner::instance())
     , _qgcPositionManager(QGCPositionManager::instance())
     , _missionCommandTree(MissionCommandTree::instance())
     , _mavlinkSigningKeys(MAVLinkSigningKeys::instance())

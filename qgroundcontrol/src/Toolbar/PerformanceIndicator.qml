@@ -16,21 +16,26 @@ Item {
     property var _sysMonitor: QGroundControl.systemResourceMonitor
     property int _fps: 0
     property int _frameCount: 0
+    property real _tick: 0
 
     QGCPalette { id: qgcPal }
 
-    FrameAnimation {
-        id: frameAnimation
-        running: true
+    NumberAnimation on _tick {
+        from: 0
+        to: 1e8
+        duration: 1e11
+        loops: Animation.Infinite
     }
+
+    on_TickChanged: _frameCount++
 
     Timer {
         interval: 1000
         running: true
         repeat: true
         onTriggered: {
-            _fps = frameAnimation.frames
-            frameAnimation.frames = 0
+            _fps = _frameCount
+            _frameCount = 0
         }
     }
 

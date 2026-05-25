@@ -16,4 +16,6 @@ target_sources(${CMAKE_PROJECT_NAME}
     PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/SystemResourceMonitor.h
         ${CMAKE_CURRENT_SOURCE_DIR}/SystemResourceMonitor.cc
+        ${CMAKE_CURRENT_SOURCE_DIR}/ScriptRunner.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/ScriptRunner.cc
 )
