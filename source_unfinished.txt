@@ -1,0 +1,2617 @@
+APMAdvancedTuningCopterComponent|||Roll
+APMAdvancedTuningCopterComponent|||Roll axis angle controller P gain
+APMAdvancedTuningCopterComponent|||Roll axis rate controller P gain
+APMAdvancedTuningCopterComponent|||Roll axis rate controller I gain
+APMAdvancedTuningCopterComponent|||Roll axis rate controller D gain
+APMAdvancedTuningCopterComponent|||Pitch
+APMAdvancedTuningCopterComponent|||Pitch axis angle controller P gain
+APMAdvancedTuningCopterComponent|||Pitch axis rate controller P gain
+APMAdvancedTuningCopterComponent|||Pitch axis rate controller I gain
+APMAdvancedTuningCopterComponent|||Pitch axis rate controller D gain
+APMAdvancedTuningCopterComponent|||Yaw
+APMAdvancedTuningCopterComponent|||Yaw axis angle controller P gain
+APMAdvancedTuningCopterComponent|||Yaw axis rate controller P gain
+APMAdvancedTuningCopterComponent|||Yaw axis rate controller I gain
+APMAdvancedTuningCopterComponent|||Advanced rate controller PID tuning with live telemetry charts.
+APMAdvancedTuningCopterComponent|||Tuning - Advanced
+APMAirframeComponent||| To change this configuration, select the desired frame class below and then reboot the vehicle.
+APMAirframeComponent|||Configure the airframe type that matches your vehicle.
+APMAirframeComponentController|||Param file github json download failed to start: %1
+APMAirframeComponentController|||Param file download failed to start: %1
+APMAirspeedComponent|||Basic
+APMAirspeedComponent|||Advanced
+APMAirspeedComponent|||Sensor type
+APMAirspeedComponent|||Use airspeed
+APMAirspeedComponent|||Airspeed ratio
+APMAirspeedComponent|||Auto calibrate ratio in flight
+APMAirspeedComponent|||Primary Airspeed Sensor
+APMAirspeedComponent|||Second Airspeed Sensor
+APMAirspeedComponent|||Multi-Sensor Options
+APMAirspeedComponent|||Primary sensor
+APMAirspeedComponent|||Airspeed Limits
+APMAirspeedComponent|||Cruise airspeed
+APMAirspeedComponent|||Minimum airspeed
+APMAirspeedComponent|||Maximum airspeed
+APMAirspeedComponent|||Stall airspeed
+APMAirspeedComponent|||Airspeed offset
+APMAirspeedComponent|||Skip calibration
+APMAirspeedComponent|||Pitot tube order
+APMAirspeedComponent|||Analog pin
+APMAirspeedComponent|||I2C bus
+APMAirspeedComponent|||PSI range
+APMAirspeedComponent|||Sensor Settings
+APMAirspeedComponent|||Primary Sensor
+APMAirspeedComponent|||Second Sensor
+APMAirspeedComponent|||Health Monitoring
+APMAirspeedComponent|||Max airspeed/groundspeed difference
+APMAirspeedComponent|||Warning threshold
+APMAirspeedComponent|||Re-enable gate size
+APMAirspeedComponent|||Offset calibration error warning
+APMAirspeedComponent|||Airspeed Options
+APMAirspeedComponent|||Configure airspeed sensor type and calibration.
+APMAirspeedComponent|||Airspeed
+APMAirspeedComponentSummary|||Sensor type
+APMAirspeedComponentSummary|||N/A
+APMAirspeedComponentSummary|||Use airspeed
+APMAirspeedComponentSummary|||Sensor 2 type
+APMAirspeedComponentSummary|||Cruise airspeed
+APMAutoTuneChannelSelector|||Channel for AutoTune switch:
+APMAutoTuneChannelSelector|||None
+APMAutoTuneChannelSelector|||Channel 7
+APMAutoTuneChannelSelector|||Channel 8
+APMAutoTuneChannelSelector|||Channel 9
+APMAutoTuneChannelSelector|||Channel 10
+APMAutoTuneChannelSelector|||Channel 11
+APMAutoTuneChannelSelector|||Channel 12
+APMCalcAmpsPerVoltDialog|||Calculate Amps per Volt
+APMCalcAmpsPerVoltDialog|||Measure current draw using an external current meter and enter the value below. Click Calculate to set the new amps per volt value.
+APMCalcAmpsPerVoltDialog|||Vehicle current telemetry is not available. Connect to a vehicle with a powered battery to enable automatic calculation.
+APMCalcAmpsPerVoltDialog|||Measured current:
+APMCalcAmpsPerVoltDialog|||Vehicle current:
+APMCalcAmpsPerVoltDialog|||Amps per volt:
+APMCalcAmpsPerVoltDialog|||Calculate And Set
+APMCalcVoltageDividerDialog|||Calculate Voltage Multiplier
+APMCalcVoltageDividerDialog|||Measure battery voltage using an external voltmeter and enter the value below. Click Calculate to set the new adjusted voltage multiplier.
+APMCalcVoltageDividerDialog|||Vehicle voltage telemetry is not available. Connect to a vehicle with a powered battery to enable automatic calculation.
+APMCalcVoltageDividerDialog|||Measured voltage:
+APMCalcVoltageDividerDialog|||Vehicle voltage:
+APMCalcVoltageDividerDialog|||Voltage multiplier:
+APMCalcVoltageDividerDialog|||Calculate And Set
+APMESCComponent|||Requires vehicle reboot
+APMESCComponent|||Configuration
+APMESCComponent|||Output type
+APMESCComponent|||Output PWM min
+APMESCComponent|||Output PWM max
+APMESCComponent|||Spin when armed
+APMESCComponent|||Spin minimum
+APMESCComponent|||Spin maximum
+APMESCComponent|||DShot ESC type
+APMESCComponent|||DShot output rate
+APMESCComponent|||Calibration
+APMESCComponent|||WARNING: Remove props prior to calibration!
+APMESCComponent|||Calibrate
+APMESCComponent|||Now perform these steps:
+APMESCComponent|||Click Calibrate to start, then:
+APMESCComponent|||- Disconnect USB and battery so flight controller powers down
+APMESCComponent|||- Connect the battery
+APMESCComponent|||- The arming tone will be played (if the vehicle has a buzzer attached)
+APMESCComponent|||- If using a flight controller with a safety button press it until it displays solid red
+APMESCComponent|||- You will hear a musical tone then two beeps
+APMESCComponent|||- A few seconds later you should hear a number of beeps (one for each battery cell you're using)
+APMESCComponent|||- And finally a single long beep indicating the end points have been set and the ESC is calibrated
+APMESCComponent|||- Disconnect the battery and power up again normally
+APMESCComponent|||Configure and calibrate Electronic Speed Controllers.
+APMESCComponent|||ESC
+APMESCComponentSummary|||Output type
+APMESCComponentSummary|||DShot ESC type
+APMESCComponentSummary|||DShot output rate
+APMFailsafesComponent|||Configure failsafe actions and leak detection.
+APMFailsafesComponent|||Configure battery, GCS, throttle, and EKF failsafes.
+APMFailsafesComponent|||Configure battery, GCS, and throttle failsafes.
+APMFailsafesComponent|||Configure battery, GCS, RC, throttle, EKF, and dead reckoning failsafes.
+APMFailsafesComponent|||Failsafes
+APMFailsafesComponentSummary|||Throttle failsafe:
+APMFailsafesComponentSummary|||Failsafe Action:
+APMFailsafesComponentSummary|||Failsafe Crash Check:
+APMFailsafesComponentSummary|||Batt1 low failsafe:
+APMFailsafesComponentSummary|||Batt1 critical failsafe:
+APMFailsafesComponentSummary|||Batt2 low failsafe:
+APMFailsafesComponentSummary|||Batt2 critical failsafe:
+APMFailsafesComponentSummarySub|||GCS failsafe:
+APMFailsafesComponentSummarySub|||Leak failsafe:
+APMFailsafesComponentSummarySub|||Battery failsafe:
+APMFailsafesComponentSummarySub|||EKF failsafe:
+APMFailsafesComponentSummarySub|||Pilot Input failsafe:
+APMFailsafesComponentSummarySub|||Int. Temperature failsafe:
+APMFailsafesComponentSummarySub|||Int. Pressure failsafe:
+APMFirmwarePlugin|||Unable to pause vehicle.
+APMFirmwarePlugin|||Vehicle does not support guided rotate
+APMFirmwarePlugin|||Unable to start takeoff: Vehicle is already in the air.
+APMFirmwarePlugin|||Unable to start takeoff: Vehicle failed to change to Takeoff mode.
+APMFirmwarePlugin|||Unable to start takeoff: Vehicle failed to arm.
+APMFirmwarePlugin|||Guided
+APMFirmwarePlugin|||RTL
+APMFirmwarePlugin|||Smart RTL
+APMFirmwarePlugin|||Auto
+APMFlightModeIndicator|||Return to Launch
+APMFlightModeIndicator|||Return At
+APMFlightModeIndicator|||Current altitude
+APMFlightModeIndicator|||Specified altitude
+APMFlightModesComponent|||Configure transmitter switch assignments and flight mode selection.
+APMFlightSafetyComponent|||Configure Return to Launch, geofence, and arming checks.
+APMFlightSafetyComponent|||Flight Safety
+APMFlightSafetyComponentSub|||Failsafe Actions
+APMFlightSafetyComponentSub|||GCS Heartbeat
+APMFlightSafetyComponentSub|||Leak
+APMFlightSafetyComponentSub|||Detector Pin
+APMFlightSafetyComponentSub|||Logic when Dry
+APMFlightSafetyComponentSub|||Battery
+APMFlightSafetyComponentSub|||Power module not set up
+APMFlightSafetyComponentSub|||Voltage
+APMFlightSafetyComponentSub|||Remaining Capacity
+APMFlightSafetyComponentSub|||EKF
+APMFlightSafetyComponentSub|||Threshold
+APMFlightSafetyComponentSub|||Pilot Input
+APMFlightSafetyComponentSub|||Timeout
+APMFlightSafetyComponentSub|||Internal Temperature
+APMFlightSafetyComponentSub|||Internal Pressure
+APMFlightSafetyComponentSub|||Arming Checks
+APMFlightSafetyComponentSub|||Skip Arming Checks
+APMFlightSafetyComponentSub|||Warning: Turning off arming checks can lead to loss of Vehicle control.
+APMFlightSafetyComponentSummary|||Arming Checks:
+APMFlightSafetyComponentSummary|||Enabled
+APMFlightSafetyComponentSummary|||Some disabled
+APMFlightSafetyComponentSummary|||GeoFence:
+APMFlightSafetyComponentSummary|||Disabled
+APMFlightSafetyComponentSummary|||Altitude
+APMFlightSafetyComponentSummary|||Circle
+APMFlightSafetyComponentSummary|||Altitude,Circle
+APMFlightSafetyComponentSummary|||Report only
+APMFlightSafetyComponentSummary|||RTL or Land
+APMFlightSafetyComponentSummary|||Unknown
+APMFlightSafetyComponentSummary|||RTL min alt:
+APMFlightSafetyComponentSummary|||current
+APMFlightSafetyComponentSummarySub|||Arming Checks:
+APMFlightSafetyComponentSummarySub|||Enabled
+APMFlightSafetyComponentSummarySub|||Some disabled
+APMFollowComponent|||Follow Me Settings
+APMFollowComponent|||Configure the vehicle to track the ground station position.
+APMFollowComponent|||Follow Me
+APMFollowComponentSummary|||Follow Enabled
+APMFollowComponentSummary|||Follow System ID
+APMFollowComponentSummary|||Max Distance
+APMFollowComponentSummary|||Offset X
+APMFollowComponentSummary|||Offset Y
+APMFollowComponentSummary|||Offset Z
+APMFollowComponentSummary|||Offset Type
+APMFollowComponentSummary|||Altitude Type
+APMFollowComponentSummary|||Yaw Behavior
+APMGimbalComponent|||Gimbal 1
+APMGimbalComponent|||Gimbal 2
+APMGimbalComponent|||Gimbal settings are not available for this firmware version.
+APMGimbalComponent|||Configure camera mount type and stabilization settings.
+APMGimbalComponent|||Gimbal
+APMGimbalInstance|||Disabled
+APMGimbalInstance|||Channel 
+APMGimbalInstance|||Gimbal Type
+APMGimbalInstance|||Default Mode
+APMGimbalInstance|||Neutral Position
+APMGimbalInstance|||Pitch
+APMGimbalInstance|||Yaw
+APMGimbalInstance|||Roll
+APMGimbalInstance|||Retracted Position
+APMGimbalInstance|||Axis Constraints
+APMGimbalInstance|||Min Angle
+APMGimbalInstance|||Max Angle
+APMGimbalInstance|||RC Targetting
+APMGimbalInstance|||Angle Control
+APMGimbalInstance|||Rate Control
+APMGimbalInstance|||Rate
+APMGimbalInstance|||Servo Controlled Gimbal
+APMGimbalInstance|||Servo Reversed
+APMGimbalInstance|||Output Channel
+APMGimbalInstance|||Stabilization Lead
+APMGimbalInstance|||Min PWM
+APMGimbalInstance|||Max PWM
+APMGimbalInstance|||Gimbal settings will be available after rebooting the vehicle.
+APMHeliComponent|||
+APMHeliComponent|||Configure swashplate, governor, and rotor parameters.
+APMLightsComponent|||Lights 1
+APMLightsComponent|||Lights 2
+APMLightsComponent|||Brightness Steps
+APMLightsComponent|||Configure light output channels.
+APMMainStatusIndicator|||Ground Control Comm Loss Failsafe
+APMMainStatusIndicator|||Vehicle Action
+APMMainStatusIndicator|||Loss Timeout
+APMMainStatusIndicator|||Failsafe Options
+APMPowerComponent|||Configure battery monitoring and capacity parameters.
+APMPowerComponentSummary|||Batt%1 monitor
+APMPowerComponentSummary|||Batt%1 capacity
+APMRadioComponent|||Configure transmitter calibration and channel assignment.
+APMRemoteSupportComponent|||Host name:
+APMRemoteSupportComponent|||Connect
+APMRemoteSupportComponent|||Forwarding traffic: Mavlink traffic will keep being forwarded until application restarts
+APMRemoteSupportComponent|||Remote Support
+APMRemoteSupportComponent|||Configure forwarding of MAVLink telemetry to a support engineer.
+APMSafetyComponent|||Configure Return to Launch, geofence, and arming checks.
+APMSafetyComponent|||Flight Safety
+APMSensorsComponent|||, 
+APMSensorsComponent|||Simple accelerometer calibration is less precise but allows calibrating without rotating the vehicle. Check this if you have a large/heavy vehicle.
+APMSensorsComponent|||Magnetic Declination
+APMSensorsComponent|||Manual Magnetic Declination
+APMSensorsComponent|||Fast compass calibration given vehicle position and yaw. This 
+APMSensorsComponent|||results in zero diagonal and off-diagonal elements, so is only 
+APMSensorsComponent|||suitable for vehicles where the field is close to spherical. It is 
+APMSensorsComponent|||useful for large vehicles where moving the vehicle to calibrate it 
+APMSensorsComponent|||is difficult. Point the vehicle North before using it.
+APMSensorsComponent|||Fast Calibration
+APMSensorsComponent|||Vehicle has no Valid positon, please provide it
+APMSensorsComponent|||Use GCS position instead
+APMSensorsComponent|||Use current map position instead
+APMSensorsComponent|||Compass Motor Interference Calibration
+APMSensorsComponent|||Configure and calibrate compass, accelerometer, and other onboard sensors.
+APMSensorsComponentController|||In progress
+APMSensorsComponentSummary|||Compasses:
+APMSensorsComponentSummary|||Accelerometer(s):
+APMSensorsComponentSummary|||Barometer(s):
+APMSensorsComponentSummary|||Not Supported(Over APM 4.1)
+APMServoComponent|||Configure ArduPilot servo outputs.
+APMServoComponent|||Servo Outputs
+APMServoComponent|||Position
+APMServoComponent|||Function
+APMServoComponent|||Min
+APMServoComponent|||Trim
+APMServoComponent|||Max
+APMServoComponent|||Reversed
+APMServoComponent|||Configure servo PWM limits, trim, direction, and function assignment.
+APMSubFrameComponent|||Configure the submarine motor layout and load default parameters.
+APMSubFrameComponent|||Frame selection
+APMSubFrameComponent|||Would you like to load the default parameters for the frame?
+APMSubFrameComponent|||Would you like to set the desired frame?
+APMSubFrameComponent|||Yes, Load default parameter set for %1
+APMSubFrameComponent|||No, set frame only
+APMSubFrameComponent|||Confirm frame %1
+APMSupportForwardingIndicator|||Mavlink traffic is being forwarded to a support server
+APMSupportForwardingIndicator|||Server name:
+APMTuningComponent|||Configure flight performance and controller parameters.
+APMTuningComponentSub|||Waypoint Navigation Parameters
+ActuatorAction|||Beep
+ActuatorAction|||3D mode: On
+ActuatorAction|||3D mode: Off
+ActuatorAction|||Set Spin Direction 1
+ActuatorAction|||Set Spin Direction 2
+ActuatorActions::Action|||Actuator action command failed
+ActuatorComponent|||Geometry
+ActuatorComponent|||Actuator Testing
+ActuatorComponent|||Configure some outputs in order to test them.
+ActuatorComponent|||Careful: Actuator sliders are enabled
+ActuatorComponent|||Propellers are removed - Enable sliders
+ActuatorComponent|||Actuator Outputs
+ActuatorComponent|||One or more actuator still needs to be assigned to an output.
+ActuatorComponent|||Identify & Assign Motors
+ActuatorComponent|||Motor Order Identification and Assignment
+ActuatorComponent|||Error
+ActuatorComponent|||Spin Motor Again
+ActuatorComponent|||Abort
+ActuatorComponent|||Actuators
+ActuatorFact|||(Param not available)
+ActuatorTesting::ActuatorTest|||All Motors
+ActuatorTesting::ActuatorTest|||Actuator test command temporarily rejected
+ActuatorTesting::ActuatorTest|||Actuator test command denied
+ActuatorTesting::ActuatorTest|||Actuator test command not supported
+ActuatorTesting::ActuatorTest|||Actuator test command failed
+AirframeComponent||| To change this configuration, select the desired airframe below then click 'Apply and Restart'.
+AirframeComponent|||Clicking 'Apply' will save the changes you have made to your airframe configuration.<br><br>                                                                        All vehicle parameters other than Radio Calibration will be reset.<br><br>                                                                        Your vehicle will also be restarted in order to complete the process.
+AirframeComponent|||Configure the airframe type and apply default tuning parameters.
+AltFrameDialog|||Altitude Frame
+AltFrameDialog|||Altitude above home position
+AltFrameDialog|||Altitude above mean sea level
+AltFrameDialog|||Altitude above terrain at waypoint using MAVLink terrain protocol
+AltFrameDialog|||Altitudes are terrain-relative; converting to AMSL before upload
+AltFrameDialog|||Each waypoint specifies its own altitude frame
+AltFrameDialog|||Altitude frame for mission items
+AltitudeFactTextField|||%1
+AnalyzeView|||Requires a connected vehicle
+AppLogging|||No log entries
+AppLogging|||All Levels
+AppLogging|||Debug
+AppLogging|||Info
+AppLogging|||Warning
+AppLogging|||Critical
+AppLogging|||Fatal
+AppLogging|||All Categories
+AppLogging|||Search…
+AppLogging|||Regex search
+AppLogging|||.*
+AppLogging|||⚠ Disk Error
+AppLogging|||Follow
+AppLogging|||Categories
+AppLogging|||Settings
+AppSettings|||CrashLogs
+AppSettings|||MavlinkActions
+AppSettings|||Settings
+AppSettings|||Save to SD card specified for application data. But SD card is write protected. Using internal storage.
+AppSettings||| (Partial)
+AppSettings||| (Test Only)
+AppSettings|||Pseudo Localization (Test Only)
+AppSettings|||Search settings...
+ArduCopterFirmwarePlugin|||Stabilize
+ArduCopterFirmwarePlugin|||Acro
+ArduCopterFirmwarePlugin|||Altitude Hold
+ArduCopterFirmwarePlugin|||Auto
+ArduCopterFirmwarePlugin|||Guided
+ArduCopterFirmwarePlugin|||Loiter
+ArduCopterFirmwarePlugin|||RTL
+ArduCopterFirmwarePlugin|||Circle
+ArduCopterFirmwarePlugin|||Land
+ArduCopterFirmwarePlugin|||Drift
+ArduCopterFirmwarePlugin|||Sport
+ArduCopterFirmwarePlugin|||Flip
+ArduCopterFirmwarePlugin|||Autotune
+ArduCopterFirmwarePlugin|||Position Hold
+ArduCopterFirmwarePlugin|||Brake
+ArduCopterFirmwarePlugin|||Throw
+ArduCopterFirmwarePlugin|||Avoid ADSB
+ArduCopterFirmwarePlugin|||Guided No GPS
+ArduCopterFirmwarePlugin|||Smart RTL
+ArduCopterFirmwarePlugin|||Flow Hold
+ArduCopterFirmwarePlugin|||Follow
+ArduCopterFirmwarePlugin|||ZigZag
+ArduCopterFirmwarePlugin|||SystemID
+ArduCopterFirmwarePlugin|||AutoRotate
+ArduCopterFirmwarePlugin|||AutoRTL
+ArduCopterFirmwarePlugin|||Turtle
+ArduPlaneFirmwarePlugin|||Manual
+ArduPlaneFirmwarePlugin|||Circle
+ArduPlaneFirmwarePlugin|||Stabilize
+ArduPlaneFirmwarePlugin|||Training
+ArduPlaneFirmwarePlugin|||Acro
+ArduPlaneFirmwarePlugin|||FBW A
+ArduPlaneFirmwarePlugin|||FBW B
+ArduPlaneFirmwarePlugin|||Cruise
+ArduPlaneFirmwarePlugin|||Autotune
+ArduPlaneFirmwarePlugin|||Auto
+ArduPlaneFirmwarePlugin|||RTL
+ArduPlaneFirmwarePlugin|||Loiter
+ArduPlaneFirmwarePlugin|||Takeoff
+ArduPlaneFirmwarePlugin|||Avoid ADSB
+ArduPlaneFirmwarePlugin|||Guided
+ArduPlaneFirmwarePlugin|||Initializing
+ArduPlaneFirmwarePlugin|||QuadPlane Stabilize
+ArduPlaneFirmwarePlugin|||QuadPlane Hover
+ArduPlaneFirmwarePlugin|||QuadPlane Loiter
+ArduPlaneFirmwarePlugin|||QuadPlane Land
+ArduPlaneFirmwarePlugin|||QuadPlane RTL
+ArduPlaneFirmwarePlugin|||QuadPlane AutoTune
+ArduPlaneFirmwarePlugin|||QuadPlane Acro
+ArduPlaneFirmwarePlugin|||Thermal
+ArduPlaneFirmwarePlugin|||Loiter to QLand
+ArduPlaneFirmwarePlugin|||Autoland
+ArduRoverFirmwarePlugin|||Manual
+ArduRoverFirmwarePlugin|||Acro
+ArduRoverFirmwarePlugin|||Learning
+ArduRoverFirmwarePlugin|||Steering
+ArduRoverFirmwarePlugin|||Hold
+ArduRoverFirmwarePlugin|||Loiter
+ArduRoverFirmwarePlugin|||Follow
+ArduRoverFirmwarePlugin|||Simple
+ArduRoverFirmwarePlugin|||Dock
+ArduRoverFirmwarePlugin|||Circle
+ArduRoverFirmwarePlugin|||Auto
+ArduRoverFirmwarePlugin|||RTL
+ArduRoverFirmwarePlugin|||Smart RTL
+ArduRoverFirmwarePlugin|||Guided
+ArduRoverFirmwarePlugin|||Initializing
+ArduSubFirmwarePlugin|||Manual
+ArduSubFirmwarePlugin|||Stabilize
+ArduSubFirmwarePlugin|||Acro
+ArduSubFirmwarePlugin|||Depth Hold
+ArduSubFirmwarePlugin|||Auto
+ArduSubFirmwarePlugin|||Guided
+ArduSubFirmwarePlugin|||Circle
+ArduSubFirmwarePlugin|||Surface
+ArduSubFirmwarePlugin|||Position Hold
+ArduSubFirmwarePlugin|||Motor Detection
+ArduSubFirmwarePlugin|||Surftrak
+AudioOutput|||%1
+AudioOutput|||Audio test. Volume is %1 percent
+Autotune|||Autotune: In progress
+Autotune|||Autotune: initializing
+Autotune|||Autotune: roll
+Autotune|||Autotune: pitch
+Autotune|||Autotune: yaw
+Autotune|||Wait for disarm
+Autotune|||Land and disarm the vehicle in order to apply the parameters.
+Autotune|||Autotune: in progress
+Autotune|||Autotune: Success
+Autotune|||Autotune successful.
+Autotune|||Autotune: Unknown error
+Autotune|||Autotune: Failed
+Autotune|||Autotune: Ack error %1
+Autotune|||Autotune: Not performed
+AutotuneUI|||Start AutoTune
+AutotuneUI|||WARNING!        
+
+The auto-tuning procedure should be executed with caution and requires the vehicle to fly stable enough before attempting the procedure!         
+
+Before starting the auto-tuning process, make sure that:         
+1. You have read the auto-tuning guide and have followed the preliminary steps         
+2. The current control gains are good enough to stabilize the drone in presence of medium disturbances         
+3. You are ready to abort the auto-tuning sequence by moving the RC sticks, if anything unexpected happens.         
+
+Click Ok to start the auto-tuning process.
+
+BatteryIndicator|||n/a
+BatteryIndicator|||Battery %1
+BatteryIndicator|||Status
+BatteryIndicator|||Remaining
+BatteryIndicator|||Consumed
+BatteryIndicator|||Function
+BatteryIndicator|||Battery Display
+BatteryIndicator|||Only show battery with lowest charge
+BatteryIndicator|||Value
+BatteryIndicator|||Coloring
+BatteryIndicator|||Low
+BatteryIndicator|||Critical
+BatteryIndicator|||Vehicle Power
+BatteryIndicator|||Configure
+BlankPlanCreator|||No Template
+BluetoothBleWorker|||BLE controller not available
+BluetoothBleWorker|||Failed to create BLE controller
+BluetoothBleWorker|||Write characteristic is not valid
+BluetoothBleWorker|||BLE service not available
+BluetoothBleWorker|||Write queue full, dropping data
+BluetoothBleWorker|||Controller error: %1
+BluetoothBleWorker|||No services found on BLE device
+BluetoothBleWorker|||Controller not available
+BluetoothBleWorker|||No services available
+BluetoothBleWorker|||Failed to create service object
+BluetoothBleWorker|||Write characteristic not found
+BluetoothBleWorker|||Service error: %1
+BluetoothClassicWorker|||Socket not available
+BluetoothClassicWorker|||Socket is not writable
+BluetoothClassicWorker|||Write failed: %1
+BluetoothClassicWorker|||Write returned 0 bytes
+BluetoothClassicWorker|||Socket error: Null Socket
+BluetoothClassicWorker|||Service discovery error: %1
+BluetoothConfiguration|||Bluetooth Low Energy Link Settings
+BluetoothConfiguration|||Invalid service UUID format: %1
+BluetoothConfiguration|||Invalid read characteristic UUID format: %1
+BluetoothConfiguration|||Invalid write characteristic UUID format: %1
+BluetoothConfiguration|||Bluetooth Permission Denied
+BluetoothConfiguration|||Bluetooth adapter not available
+BluetoothConfiguration|||Discovery error: %1
+BluetoothConfiguration|||Powered Off
+BluetoothConfiguration|||Connectable
+BluetoothConfiguration|||Discoverable
+BluetoothConfiguration|||Discoverable (Limited Inquiry)
+BluetoothConfiguration|||Bluetooth adapter powered off
+BluetoothConfiguration|||Unpaired
+BluetoothConfiguration|||Paired
+BluetoothConfiguration|||Authorized Paired
+BluetoothConfiguration|||Device %1 unpaired
+BluetoothConfiguration|||Device %1 (%2) unpaired
+BluetoothConfiguration|||Device %1 paired successfully
+BluetoothConfiguration|||Device %1 (%2) paired successfully
+BluetoothConfiguration|||Pairing Error
+BluetoothConfiguration|||Missing Bluetooth Permissions
+BluetoothConfiguration|||Unknown Bluetooth Adapter Error
+BluetoothConfiguration|||Pairing is only supported for Classic Bluetooth
+BluetoothConfiguration|||Invalid Bluetooth address
+BluetoothConfiguration|||Unpairing is only supported for Classic Bluetooth
+BluetoothConfiguration|||Adapter unavailable
+BluetoothConfiguration|||N/A (BLE mode)
+BluetoothConfiguration|||Invalid address
+BluetoothConfiguration|||Unknown
+BluetoothConfiguration|||Authorized
+BluetoothConfiguration|||Unknown Device
+BluetoothConfiguration|||Invalid adapter address
+BluetoothConfiguration|||Adapter not found
+BluetoothConfiguration|||Failed to initialize adapter
+BluetoothConfiguration|||Unavailable
+BluetoothConfiguration|||Discoverable (Limited)
+BluetoothLink|||Bluetooth Low Energy
+BluetoothLink|||Bluetooth
+BluetoothLink|||%1 Link Error
+BluetoothLink|||Link %1: (Device: %2) %3
+BluetoothLink|||Bluetooth Permission Denied
+BluetoothLink|||Failed to start Bluetooth worker thread
+BluetoothSettings|||Bluetooth Error
+BluetoothSettings|||Bluetooth Adapter
+BluetoothSettings|||Adapter
+BluetoothSettings|||Unknown
+BluetoothSettings|||Status
+BluetoothSettings|||Bluetooth adapter unavailable
+BluetoothSettings|||Powered On
+BluetoothSettings|||Discoverable
+BluetoothSettings|||Connection
+BluetoothSettings|||Mode
+BluetoothSettings|||Classic
+BluetoothSettings|||BLE
+BluetoothSettings|||Selected Device
+BluetoothSettings|||None
+BluetoothSettings|||Device Address
+BluetoothSettings|||N/A
+BluetoothSettings|||Pairing
+BluetoothSettings|||Unpair
+BluetoothSettings|||Pair
+BluetoothSettings|||Signal Strength
+BluetoothSettings|||(Connected)
+BluetoothSettings|||(Last Scan)
+BluetoothSettings|||Advanced BLE Configuration
+BluetoothSettings|||Service UUID
+BluetoothSettings|||Auto-detect
+BluetoothSettings|||RX Characteristic
+BluetoothSettings|||TX Characteristic
+BluetoothSettings|||UUIDs are auto-detected for most devices. Only configure if connection fails.
+BluetoothSettings|||Known Devices
+BluetoothSettings|||Available BLE Devices
+BluetoothSettings|||Available Devices
+BluetoothSettings|||Scanning for devices...
+BluetoothSettings|||Paired
+BluetoothSettings|||No devices found
+BluetoothSettings|||Make sure your BLE device is powered on and advertising
+BluetoothSettings|||Make sure your Bluetooth device is powered on and discoverable
+BluetoothSettings|||Stop Scan
+BluetoothSettings|||Scan for Devices
+BluetoothWorker|||Device is not connected
+BluetoothWorker|||Max reconnection attempts reached
+BluetoothWorker|||Service discovery timed out
+Bootloader|||Unable to put radio into command mode +++
+Bootloader|||Radio did not respond to command mode
+Bootloader|||Radio did not respond to ATI2 command
+Bootloader|||Radio did not return board id
+Bootloader|||Unable to reboot radio (ready read)
+Bootloader|||Get Device: 
+CalcAmpsPerVoltDialog|||Calculate Amps per Volt
+CalcAmpsPerVoltDialog|||Measure current draw using an external current meter and enter the value below. Click Calculate to set the new amps per volt value.
+CalcAmpsPerVoltDialog|||Measured current:
+CalcAmpsPerVoltDialog|||Vehicle current:
+CalcAmpsPerVoltDialog|||Amps per volt:
+CalcAmpsPerVoltDialog|||Calculate
+CalcVoltageDividerDialog|||Calculate Voltage Divider
+CalcVoltageDividerDialog|||Measure battery voltage using an external voltmeter and enter the value below. Click Calculate to set the new voltage multiplier.
+CalcVoltageDividerDialog|||Measured voltage:
+CalcVoltageDividerDialog|||Vehicle voltage:
+CalcVoltageDividerDialog|||Voltage divider:
+CalcVoltageDividerDialog|||Calculate
+CameraSection|||Action
+CenterMapDropButton|||Home
+CenterMapDropPanel|||Home
+CompInfoParam|||Component %1
+ComponentInformationTranslation|||File open failed: file:error %1 %2
+DebugWindow|||Qt Platform:
+DebugWindow|||Font Point Size 10
+DebugWindow|||Default font width:
+DebugWindow|||Font Point Size 10.5
+DebugWindow|||Default font height:
+DebugWindow|||Font Point Size 11
+DebugWindow|||Default font pixel size:
+DebugWindow|||Font Point Size 11.5
+DebugWindow|||Default font point size:
+DebugWindow|||Font Point Size 12
+DebugWindow|||QML Screen Desktop:
+DebugWindow|||Font Point Size 12.5
+DebugWindow|||QML Screen Size:
+DebugWindow|||Font Point Size 13
+DebugWindow|||QML Pixel Density:
+DebugWindow|||Font Point Size 13.5
+DebugWindow|||QML Pixel Ratio:
+DebugWindow|||Font Point Size 14
+DebugWindow|||Default Point:
+DebugWindow|||Font Point Size 14.5
+DebugWindow|||Computed Font Height:
+DebugWindow|||Font Point Size 15
+DebugWindow|||Computed Screen Height:
+DebugWindow|||Font Point Size 15.5
+DebugWindow|||Computed Screen Width:
+DebugWindow|||Font Point Size 16
+DebugWindow|||Desktop Available Width:
+DebugWindow|||Font Point Size 16.5
+DebugWindow|||Desktop Available Height:
+DebugWindow|||Font Point Size 17
+ESCCalibrationDialog|||ESC Calibration
+ESCCalibrationDialog|||ESC Calibration failed. 
+ESCCalibrationDialog|||%1 cannot perform ESC Calibration with this version of firmware. You will need to upgrade to a newer firmware.
+ESCCalibrationDialog|||%1 cannot perform ESC Calibration with this version of firmware. You will need to upgrade %1.
+ESCCalibrationDialog|||You must disconnect the battery prior to performing ESC Calibration. Disconnect your battery and try again.
+ESCCalibrationDialog|||WARNING: Props must be removed from vehicle prior to performing ESC calibration.
+ESCCalibrationDialog||| Connect the battery now and calibration will begin.
+ESCCalibrationDialog|||Performing calibration. This will take a few seconds..
+ESCCalibrationDialog|||Calibration complete. You can disconnect your battery now if you like.
+ESCCalibrationDialog|||Starting ESC calibration...
+ESP8266ComponentSummary|||AP Mode
+ESP8266ComponentSummary|||Station Mode
+EditPositionDialog|||Edit Position
+EditPositionDialog|||Coordinate System
+EditPositionDialog|||Geographic
+EditPositionDialog|||Universal Transverse Mercator
+EditPositionDialog|||Military Grid Reference
+EditPositionDialog|||Vehicle Position
+EditPositionDialog|||Alt (AMSL)
+EditPositionDialog|||Alt (Rel)
+EditPositionDialog|||Alt (AGL)
+EditPositionDialog|||Set position from vehicle
+EditPositionDialog|||Set altitude from vehicle
+EditPositionDialog|||Set position
+EditPositionDialog|||Move
+EscIndicator|||OK
+EscIndicator|||ERR
+EscIndicatorPage|||N/A
+EscIndicatorPage|||–
+EscIndicatorPage|||ESC Status Overview
+EscIndicatorPage|||Healthy Motors
+EscIndicatorPage|||Total Errors
+EscIndicatorPage|||Motor %1 %2
+EscIndicatorPage|||- OFFLINE
+EscIndicatorPage|||RPM
+EscIndicatorPage|||Temp
+EscIndicatorPage|||Voltage
+EscIndicatorPage|||Current
+EscIndicatorPage|||Errors
+FTPController|||Another FTP operation is in progress
+FTPController|||Failed to list %1
+FTPController|||Could not create directory %1
+FTPController|||Failed to download %1
+FTPController|||File %1 does not exist
+FTPController|||Failed to upload %1
+FTPController|||Failed to delete %1
+FTPController|||No archive path specified
+FTPController|||Archive file not found: %1
+FTPController|||Not a supported archive format: %1
+FTPController|||Extraction already in progress
+FTPController|||Could not create output directory: %1
+FTPController|||Extraction failed
+FTPManager|||Invalid Nak format
+FTPManager|||errno %1
+FTPManager|||List directory failed
+FTPManager|||Aborted
+FTPManager|||Delete failed
+FTPManager|||Upload failed for: %1 - error: %2
+FTPManager|||Upload failed for: %1 - no response from vehicle
+FTPManager|||Upload failed for: %1 - file not open
+FTPManager|||Upload failed for: %1 - error reading file
+FTPManager|||Aborted for: %1
+FWLandingPatternEditor|||Flight Speed
+FWLandingPatternEditor|||Final approach
+FWLandingPatternEditor|||Use loiter to altitude
+FWLandingPatternEditor|||Distance
+FWLandingPatternMapVisual|||Approach
+Fact|||Reboot vehicle for changes to take effect.
+Fact|||Restart application for changes to take effect.
+FactTextFieldSlider2|||Value: 
+Firmware Class|||PX4 Pro
+Firmware Class|||ArduPilot
+Firmware Class|||Generic
+FirmwareImage|||Firmware file missing required key: %1
+FirmwareUpgrade|||%1 can upgrade the firmware on Pixhawk devices and SiK Radios.
+FirmwareUpgrade|||Plug in your device
+FirmwareUpgrade||| via USB to 
+FirmwareUpgrade|||start
+FirmwareUpgrade||| firmware upgrade.
+FirmwareUpgrade|||If upgrade failed, make sure to connect 
+FirmwareUpgrade|||directly
+FirmwareUpgrade||| to a powered USB port on your computer, not through a USB hub. 
+FirmwareUpgrade|||Also make sure you are only powered via USB 
+FirmwareUpgrade|||not battery
+FirmwareUpgrade||| disconnected 
+FirmwareUpgrade|||prior to firmware upgrade.
+FirmwareUpgrade|||Please unplug your Pixhawk and/or Radio from USB.
+FirmwareUpgrade|||Either firmware list is still downloading, or no firmware is available for current selection.
+FirmwareUpgrade|||You must choose a board type.
+FirmwareUpgrade|||No firmware was found for the current selection.
+FirmwareUpgrade|||Follow the forums actively when using it.
+FixedWingLandingComplexItem|||Fixed Wing Landing
+FixedWingLandingComplexItem|||Alternate Landing
+FlightModeIndicator|||N/A
+FlightModeIndicator|||FW
+VTOL
+FlightModeIndicator|||MR
+VTOL
+FlightModeIndicator|||Transition to Multi-Rotor
+FlightModeIndicator|||Transition to Fixed Wing
+FlightModeIndicator|||Some Modes Hidden
+FlightModeIndicator|||Click and Hold to Confirm Mode Change
+FlightModeIndicator|||Edit Displayed Flight Modes
+FlightModeIndicator|||Flight Modes
+FlightModeIndicator|||Configure
+FlightModeMenuIndicator|||N/A
+FlightModeMenuIndicator|||RTL Altitude
+FlightModeMenuIndicator|||Land Descent Rate:
+FlightModeMenuIndicator|||Precision Landing
+FlightModesComponent|||Configure transmitter switch assignments and flight mode selection.
+FlightModesComponent|||Switch Settings
+FlyViewAdditionalActionsButton|||Actions
+FlyViewGripperButton|||Gripper
+FlyViewGripperDropPanel|||Release
+FlyViewGripperDropPanel|||Grab
+FlyViewGripperDropPanel|||Hold
+FlyViewMap|||Go to location
+FlyViewMap|||Orbit at location
+FlyViewMap|||ROI at location
+FlyViewMap|||Set home here
+FlyViewMap|||Set Estimator Origin
+FlyViewMap|||Set Heading
+FlyViewMap|||Lat: %1
+FlyViewMap|||Lon: %1
+FlyViewMap|||Edit ROI Position
+FlyViewMap|||Cancel ROI
+FlyViewMap|||Edit Position
+FlyViewPreFlightChecklistPopup|||Pre-Flight Checklist
+FlyViewToolBar|||Disconnect
+FlyViewTopRightPanel|||Vehicles Selected: 
+FlyViewTopRightPanel|||Select All
+FlyViewTopRightPanel|||Deselect All
+FlyViewTopRightPanel|||Multi Vehicle Actions
+FlyViewTopRightPanel|||Arm
+FlyViewTopRightPanel|||Disarm
+FlyViewTopRightPanel|||Start
+FlyViewTopRightPanel|||Pause
+FlyViewVideo|||Double-click to exit full screen
+GCSControlIndicator|||GCS 
+GCSControlIndicator||| is requesting control
+GCSControlIndicator|||Allow <br> takeover
+GCSControlIndicator|||Ignoring automatically in 
+GCSControlIndicator||| seconds
+GCSControlIndicator|||Ignore
+GCSControlIndicator|||Reverting back to takeover not allowed if GCS 
+GCSControlIndicator||| doesn't take control in 
+GCSControlIndicator||| seconds ...
+GCSControlIndicator|||System in control: 
+GCSControlIndicator|||This GCS
+GCSControlIndicator|||Takeover allowed
+GCSControlIndicator|||Takeover NOT allowed
+GCSControlIndicator|||Send Control Request:
+GCSControlIndicator|||Change takeover condition:
+GCSControlIndicator|||Request sent: 
+GCSControlIndicator|||Allow takeover
+GCSControlIndicator|||Adquire Control
+GCSControlIndicator|||Send Request
+GCSControlIndicator|||Request Timeout (sec):
+GCSControlIndicator|||Change
+GCSControlIndicator|||This GCS Mavlink System ID: 
+GPSIndicator|||RTK
+GPSIndicatorPage|||N/A
+GPSIndicatorPage|||–.––
+GPSIndicatorPage|||Disconnected
+GPSIndicatorPage|||Incoming correction
+GPSIndicatorPage|||Configuration
+GPSIndicatorPage|||Software
+GPSIndicatorPage|||Antenna
+GPSIndicatorPage|||Event congestion
+GPSIndicatorPage|||CPU overload
+GPSIndicatorPage|||Output congestion
+GPSIndicatorPage|||Multiple errors
+GPSIndicatorPage|||Vehicle GPS Status
+GPSIndicatorPage|||Satellites
+GPSIndicatorPage|||GPS Lock
+GPSIndicatorPage|||HDOP
+GPSIndicatorPage|||VDOP
+GPSIndicatorPage|||Course Over Ground
+GPSIndicatorPage|||GPS Error
+GPSIndicatorPage|||RTK GPS Status
+GPSIndicatorPage|||Survey-in Active
+GPSIndicatorPage|||RTK Streaming
+GPSIndicatorPage|||Duration
+GPSIndicatorPage|||Accuracy
+GPSIndicatorPage|||Current Accuracy
+GPSIndicatorPage|||RTK GPS Settings
+GPSIndicatorPage|||AutoConnect
+GPSIndicatorPage|||Settings displayed
+GPSIndicatorPage|||Survey-In
+GPSIndicatorPage|||Specify position
+GPSIndicatorPage|||Min Duration
+GPSIndicatorPage|||Current Base Position
+GPSIndicatorPage|||Save
+GPSIndicatorPage|||Not Yet Valid
+GPSResilienceIndicator|||GPS Resilience Status
+GPSResilienceIndicator|||GPS Jamming
+GPSResilienceIndicator|||n/a
+GPSResilienceIndicator|||GPS Spoofing
+GPSResilienceIndicator|||GPS Authentication
+GPSResilienceIndicator|||GPS 1 Details
+GPSResilienceIndicator|||Jamming
+GPSResilienceIndicator|||Spoofing
+GPSResilienceIndicator|||Authentication
+GPSResilienceIndicator|||GPS 2 Details
+GcsPositionStatus|||GCS Position
+GcsPositionStatus|||Latitude
+GcsPositionStatus|||N/A
+GcsPositionStatus|||Longitude
+GcsPositionStatus|||HDOP
+GeoJson|||File not found: %1
+GeoJson|||Unable to open file: %1 error: %2
+GeoJson|||No shapes found in GeoJson file.
+GeoJson|||No supported type found in GeoJson file.
+GeoJson|||No polygon data found in GeoJson file.
+GeoJson|||No polygon found in GeoJson file.
+GeoJson|||No polyline data found in GeoJson file.
+GeoJson|||No polyline found in GeoJson file.
+GeoJsonHelper|||GeoJson file load failed. %1
+GeoJsonHelper|||value for coordinate is not array
+GeoJsonHelper|||Coordinate array must contain %1 values
+GeoJsonHelper|||Coordinate array may only contain double values, found: %1
+GeoJsonHelper|||value for coordinate array is not array
+GeoTagController|||Empty Filename.
+GeoTagController|||Invalid Filename.
+GeoTagController|||Invalid Directory.
+GeoTagController|||Images have already been tagged. Existing images will be removed.
+GeoTagController|||Please select an image directory.
+GeoTagController|||Please select a log file.
+GeoTagController|||Tagging cancelled
+GeoTagController|||%1 image(s) failed to tag
+GeoTagController|||Could not read EXIF timestamp
+GeoTagController|||Could not read EXIF data from any images
+GeoTagController|||All images failed to tag
+GeoTagController|||The image directory doesn't contain supported images. Supported formats: JPEG, TIFF, DNG
+GeoTagController|||Geotagging failed. Couldn't open image: %1
+GeoTagController|||Geotagging failed. Couldn't extract time from image: %1
+GeoTagController|||Geotagging failed. Couldn't open log file.
+GeoTagController|||Geotagging failed. Log file is empty.
+GeoTagController|||Geotagging failed. Couldn't read log file.
+GeoTagController|||Log parsing failed
+GeoTagController|||Calibration failed: No triggers or images available.
+GeoTagController|||No matching trigger
+GeoTagController|||Calibration failed: No matching triggers found for images.
+GeoTagController|||Geotagging failed. Insufficient disk space. Need approximately %1 MB.
+GeoTagController|||Geotagging failed. Couldn't create output directory: %1
+GeoTagController|||Geotagging failed. Requesting image #%1, but only %2 images present.
+GeoTagController|||Geotagging failed. Requesting trigger #%1, but only %2 triggers present.
+GeoTagController|||Geotagging failed. Couldn't write EXIF to image: %1
+GeoTagController|||Geotagging failed. Couldn't save image: %1
+GeoTagImageModel|||Pending
+GeoTagImageModel|||Processing
+GeoTagImageModel|||Tagged
+GeoTagImageModel|||Skipped
+GeoTagImageModel|||Failed
+GeoTagPage|||Tag images from a survey mission with GPS coordinates from your flight log.
+GeoTagPage|||Geotagging in progress...
+GeoTagPage|||Successfully tagged %1 images
+GeoTagPage|||%1 skipped
+GeoTagPage|||%1 failed
+GeoTagPage|||Select Flight Log
+GeoTagPage|||Browse...
+GeoTagPage|||All Files (*)
+GeoTagPage|||Flight logs (*.ulg *.bin)
+GeoTagPage|||ULog (*.ulg)
+GeoTagPage|||DataFlash (*.bin)
+GeoTagPage|||No file selected
+GeoTagPage|||Select Image Folder
+GeoTagPage|||No folder selected
+GeoTagPage|||Output Folder (Optional)
+GeoTagPage|||Select Output Folder
+GeoTagPage|||Default: /TAGGED subfolder
+GeoTagPage|||Advanced Options
+GeoTagPage|||Time Offset (seconds):
+GeoTagPage|||Adjust if camera clock differs from flight log
+GeoTagPage|||Preview mode (don't write files)
+GeoTagPage|||Verify time offset before committing
+GeoTagPage|||Cancel
+GeoTagPage|||Preview
+GeoTagPage|||Images (%1)
+GeoTagPage|||Pending
+GeoTagPage|||Processing
+GeoTagPage|||Tagged
+GeoTagPage|||Skipped
+GeoTagPage|||Failed
+GimbalIndicator|||Center
+GimbalIndicator|||Tilt 90
+GimbalIndicator|||Retract
+GimbalIndicator|||Horizontal FOV
+GimbalIndicator|||Vertical FOV
+GimbalIndicator|||Joystick buttons speed:
+GimbalIndicator|||Show gimbal Azimuth indicator in map
+GimbalIndicator|||Use Azimuth instead of local yaw on top toolbar indicator
+GimbalIndicator|||Show Acquire/Release control button
+GimbalIndicator|||Retracted
+GimbalIndicator|||Yaw locked
+GimbalIndicator|||Yaw follow
+GimbalIndicator|||P: 
+GimbalIndicator|||Az: 
+GimbalIndicator|||Y: 
+GimbalIndicator|||Active Gimbal
+GimbalIndicator|||Gimbal %1
+GimbalIndicator|||Commands
+GimbalIndicator|||Yaw Follow
+GimbalIndicator|||Yaw Lock
+GimbalIndicator|||Point Home
+GimbalIndicator|||Release Control
+GimbalIndicator|||Acquire Control
+GimbalIndicator|||On-Screen Control
+GimbalIndicator|||Enabled
+GimbalIndicator|||Click and drag
+GimbalIndicator|||Max speed
+GimbalIndicator|||Zoom speed
+GimbalIndicator|||Max speed (min zoom)
+GimbalIndicator|||Min speed (max zoom)
+GuidedActionsController|||Arm (MV)
+GuidedActionsController|||Disarm (MV)
+GuidedActionsController|||Set Estimator Origin
+GuidedActionsController|||Takeoff and hold position
+GuidedActionsController|||Takeoff and start the current mission
+GuidedActionsController|||Takeoff and start the current mission for selected vehicles
+GuidedActionsController|||Continue the mission from the current waypoint
+GuidedActionsController|||Land the vehicle at the current position
+GuidedActionsController|||Return to the launch position of the vehicle
+GuidedActionsController|||Change the altitude of the vehicle up or down
+GuidedActionsController|||Change the forward flight loiter radius
+GuidedActionsController|||Change the maximum horizontal cruise speed
+GuidedActionsController|||Change the equivalent airspeed setpoint
+GuidedActionsController|||Move the vehicle to the specified location
+GuidedActionsController|||Adjust current waypoint to %1
+GuidedActionsController|||Orbit the vehicle around the specified location
+GuidedActionsController|||Abort the landing sequence
+GuidedActionsController|||Pause at current position
+GuidedActionsController|||Pause selected vehicles at their current position
+GuidedActionsController|||Make the specified location a Region Of Interest
+GuidedActionsController|||Make the specified location the estimator origin
+GuidedActionsController|||Set the vehicle heading towards the specified location
+GuidedActionsController|||_activeVehicle(%1) _vehicleArmed(%2) guidedModeSupported(%3) _vehicleFlying(%4) _vehicleWasFlying(%5) _vehicleInRTLMode(%6) pauseVehicleSupported(%7) _vehiclePaused(%8) _flightMode(%9) _visualItemsCount(%10) roiSupported(%11) orbitSupported(%12) _missionActive(%13) _hideROI(%14) _hideOrbit(%15)
+GuidedActionsController|||Force Arm
+GuidedActionsController|||Change Loiter Radius
+GuidedActionsController|||Change Max Ground Speed
+GuidedActionsController|||Change Airspeed
+GuidedActionsController|||Set Home
+GuidedActionsController|||Set Flight Mode
+GuidedActionsController|||Change Heading
+GuidedActionsController|||Arm selected vehicles.
+GuidedActionsController|||WARNING: This will force arming of the vehicle bypassing any safety checks.
+GuidedActionsController|||Disarm selected vehicles.
+GuidedActionsController|||Set vehicle home as the specified location. This will affect Return to Home position
+GuidedActionsController|||Set the vehicle flight mode to %1
+GuidedActionsController|||Height (rel)
+GuidedActionsController|||Airspeed
+GuidedActionsController|||Speed
+GuidedActionsController|||Alt (rel)
+HeightIndicator|||30 ft
+HelpSettings|||QGroundControl Discord Channel
+InitialSetupPrompt|||Preferences
+InitialSetupPrompt|||Horizontal Distance
+InitialSetupPrompt|||Vertical Distance
+InitialSetupPrompt|||Area
+InitialSetupPrompt|||Speed
+InitialSetupPrompt|||Temperature
+InitialSetupPrompt|||Vehicle Preferences
+InitialSetupPrompt|||Select the firmware and vehicle type you use. This tailors the interface for a simpler experience. Choose 'All' if you use multiple types.
+InitialSetupPrompt|||Preferred Firmware
+InitialSetupPrompt|||Preferred Vehicle
+InitialSetupPrompt|||Offline Firmware
+InitialSetupPrompt|||Offline Vehicle
+InitialSetupPrompt|||Measurement Units
+InitialSetupPrompt|||Choose the measurement units you want to use. You can also change it later in General Settings.
+InitialSetupPrompt|||System of units
+InitialSetupPrompt|||Metric System
+InitialSetupPrompt|||Imperial System
+InstrumentValueEditDialog|||Valuec requires a connected vehicle for setup.
+InstrumentValueEditDialog|||Telemetry Display
+InstrumentValueEditDialog|||Telemetry
+InstrumentValueEditDialog|||Group
+InstrumentValueEditDialog|||Value
+InstrumentValueEditDialog|||Change
+InstrumentValueEditDialog|||Value range
+InstrumentValueEditDialog|||Type
+InstrumentValueValue|||–
+Joystick|||Continuous Focus In
+Joystick|||Continuous Focus Out
+Joystick|||Step Focus In
+Joystick|||Step Focus Out
+Joystick|||Gimbal Yaw Lock
+Joystick|||Gimbal Yaw Follow
+Joystick|||Gripper Grab
+Joystick|||Gripper Release
+Joystick|||Gripper Hold
+Joystick|||Landing gear deploy
+Joystick|||Landing gear retract
+Joystick|||Motor Interlock enable
+Joystick|||Motor Interlock disable
+JoystickComponent|||Enable
+JoystickComponent|||Not currently available
+JoystickComponent|||Calibrated
+JoystickComponent|||Requires Calibration
+JoystickComponent|||Enable Joystick
+JoystickComponent|||%1 calibration is complete. Enable it now?
+JoystickComponent|||Buttons
+JoystickComponent|||Settings
+JoystickComponent|||No joysticks or gamepads detected.
+JoystickComponent|||Joystick
+JoystickComponent|||Configure axis calibration, button assignments, and input settings.
+JoystickComponent|||No joystick detected
+JoystickComponent|||Buttons only
+JoystickComponent|||Ready
+JoystickComponent|||Needs calibration
+JoystickComponent|||Rumble
+JoystickComponent|||Trigger Rumble
+JoystickComponent|||LED
+JoystickComponent|||Gyro
+JoystickComponent|||Accel
+JoystickComponent|||Touchpad
+JoystickComponentButtons|||Multiple buttons that have the same action must be pressed simultaneously to invoke the action.
+JoystickComponentButtons|||Repeat
+JoystickComponentSettings|||Center stick is zero throttle
+JoystickComponentSettings|||Spring loaded throttle smoothing
+JoystickComponentSettings|||Negative Thrust
+JoystickComponentSettings|||Advanced Settings
+JoystickComponentSettings|||Circle Correction
+JoystickComponentSettings|||Deadband
+JoystickComponentSettings|||Deadband can be set during the first step of calibration by gently wiggling each axis. 
+JoystickComponentSettings|||MANUAL_CONTROL Pitch Extension
+JoystickComponentSettings|||MANUAL_CONTROL Roll Extension
+JoystickComponentSettings|||MANUAL_CONTROL Aux1
+JoystickComponentSettings|||MANUAL_CONTROL Aux2
+JoystickComponentSettings|||MANUAL_CONTROL Aux3
+JoystickComponentSettings|||MANUAL_CONTROL Aux4
+JoystickComponentSettings|||MANUAL_CONTROL Aux5
+JoystickComponentSettings|||MANUAL_CONTROL Aux6
+JoystickComponentSummary|||Status
+JoystickComponentSummary|||No joystick detected
+JoystickComponentSummary|||Buttons only
+JoystickComponentSummary|||Ready
+JoystickComponentSummary|||Calibrated
+JoystickComponentSummary|||Needs calibration
+JoystickComponentSummary|||Type
+JoystickComponentSummary|||Gamepad
+JoystickComponentSummary|||Joystick
+JoystickComponentSummary|||Connection
+JoystickComponentSummary|||Inputs
+JoystickComponentSummary|||%1 axes
+JoystickComponentSummary|||%1 buttons
+JoystickComponentSummary|||%1 balls
+JoystickComponentSummary|||%1 touchpads
+JoystickComponentSummary|||Battery
+JoystickComponentSummary|||%1%
+JoystickComponentSummary|||Features
+JoystickComponentSummary|||Rumble
+JoystickComponentSummary|||Triggers
+JoystickComponentSummary|||LED
+JoystickComponentSummary|||Gyro
+JoystickComponentSummary|||Accel
+JoystickComponentSummary|||Device ID
+JoystickComponentSummary|||Player
+JoystickComponentSummary|||Virtual
+JoystickComponentSummary|||Yes
+JoystickIndicator|||Joystick
+JoystickIndicator|||No Vehicle
+JoystickIndicator|||Yes
+JoystickIndicator|||No
+JoystickIndicator|||Type:
+JoystickIndicator|||Gamepad
+JoystickIndicator|||Connection:
+JoystickIndicator|||Inputs:
+JoystickIndicator|||%1 axes
+JoystickIndicator|||%1 buttons
+JoystickIndicator|||%1 balls
+JoystickIndicator|||%1 touchpads
+JoystickIndicator|||Battery:
+JoystickIndicator|||%1%
+JoystickIndicator|||Features:
+JoystickIndicator|||Rumble
+JoystickIndicator|||Trigger Rumble
+JoystickIndicator|||LED
+JoystickIndicator|||Gyro
+JoystickIndicator|||Accel
+JoystickIndicator|||Player:
+JoystickIndicator|||Device Details
+JoystickIndicator|||Device Type:
+JoystickIndicator|||Vendor/Product:
+JoystickIndicator|||Serial:
+JoystickIndicator|||Firmware:
+JoystickIndicator|||Path:
+JoystickIndicator|||GUID:
+JoystickIndicator|||Virtual:
+JoystickIndicator|||LED Types:
+JoystickIndicator|||Mono
+JoystickIndicator|||RGB
+JoystickIndicator|||Player
+JoystickIndicator|||Haptic:
+JoystickIndicator|||%1 effects
+JoystickIndicator|||Motion Sensors:
+JoystickIndicator|||Gyro (%1 Hz)
+JoystickIndicator|||Accel (%1 Hz)
+JoystickSDL|||Axis %1
+JoystickSDL|||Button %1
+KML|||File not found: %1
+KML|||Unable to open file: %1 error: %2
+KML|||Unable to parse KML file: %1 error: %2 line: %3
+KML|||Empty coordinates string
+KML|||No valid coordinates found
+KML|||No supported type found in KML file.
+KML|||Unable to find Polygon node in KML
+KML|||No valid polygons found in KML file
+KML|||No valid polylines found in KML file
+KML|||Unable to find Point node in KML
+KML|||No valid points found in KML file
+KML|||Unable to find LineString node in KML
+KMLOrSHPFileDialog|||Select File
+LabelledFactBrowse|||<not set>
+LabelledFactBrowse|||Browse
+LandingComplexItem|||%1 does not support loading this complex mission item type: %2:%3
+LandingComplexItem|||Fixed Wing Landing Pattern: Setting the loiter and landing altitudes with different settings for altitude relative is no longer supported. Both have been set to relative altitude. Be sure to adjust/check your plan prior to flight.
+LinkConfigurationManager|||Links
+LinkConfigurationManager|||Delete Link
+LinkConfigurationManager|||Are you sure you want to delete '%1'?
+LinkConfigurationManager|||Disconnect
+LinkConfigurationManager|||Connect
+LinkConfigurationManager|||Add New Link
+LinkConfigurationManager|||Add
+LinkConfigurationManager|||Edit Link
+LinkConfigurationManager|||Name
+LinkConfigurationManager|||Enter name
+LinkConfigurationManager|||Automatically Connect on Start
+LinkConfigurationManager|||High Latency
+LinkConfigurationManager|||Type
+LinkInterface|||Signing Failure
+LinkInterface|||Signing signature mismatch
+LinkInterface|||MAVLink v1 traffic detected on link '%1'. %2 only supports MAVLink v2. Please ensure your vehicle is configured to use MAVLink v2.
+LinkManager|||Bluetooth
+LogManager|||Debug
+LogManager|||Info
+LogManager|||Warning
+LogManager|||Critical
+LogReplayConfiguration|||Log Replay Link Settings
+LogReplayLink|||Log Replay Link Error
+LogReplayLink|||Link: %1, %2.
+LogReplaySettings|||Log File
+LogReplaySettings|||Select Telemetery Log
+LogReplaySettings|||Telemetry Logs (*.%1)
+LogReplaySettings|||All Files (*)
+LogReplayStatusBar|||Close
+LogReplayWorker|||You must close all connections prior to replaying a log.
+LogReplayWorker|||Connect not allowed during Flight Data replay.
+LogReplayWorker|||Unable to seek to new position
+LogReplayWorker|||Attempt to load new log while log being played
+LogReplayWorker|||Unable to open log file: '%1', error: %2
+LogReplayWorker|||The log file '%1' is corrupt or empty.
+LoggingCategoriesDialog|||Logging Categories
+LoggingCategoriesDialog|||Search
+LoggingCategoriesDialog|||Filter categories…
+LoggingCategoriesDialog|||Clear
+LoggingCategoriesDialog|||Active Categories
+LoggingCategoriesDialog|||Warning
+LoggingCategoriesDialog|||Reset All
+LoggingCategoriesDialog|||Categories
+LoggingCategoriesDialog|||No categories registered
+LoggingCategoriesDialog|||Search Results
+LoggingCategoriesDialog|||No matching categories
+LoggingSettingsDialog|||Text (.txt)
+LoggingSettingsDialog|||Text files (*.txt)
+LoggingSettingsDialog|||All Files (*)
+LoggingSettingsDialog|||JSON (.json)
+LoggingSettingsDialog|||JSON files (*.json)
+LoggingSettingsDialog|||CSV (.csv)
+LoggingSettingsDialog|||CSV files (*.csv)
+LoggingSettingsDialog|||JSONL (.jsonl)
+LoggingSettingsDialog|||JSON Lines files (*.jsonl)
+LoggingSettingsDialog|||Logging Settings
+LoggingSettingsDialog|||Disk Logging
+LoggingSettingsDialog|||Enable disk logging
+LoggingSettingsDialog|||Log files are saved to: %1
+LoggingSettingsDialog|||Flush on level:
+LoggingSettingsDialog|||Off
+LoggingSettingsDialog|||Warning
+LoggingSettingsDialog|||Critical
+LoggingSettingsDialog|||Remote Logging
+LoggingSettingsDialog|||Enable remote logging
+LoggingSettingsDialog|||Host:
+LoggingSettingsDialog|||Port:
+LoggingSettingsDialog|||Protocol:
+LoggingSettingsDialog|||UDP
+LoggingSettingsDialog|||TCP
+LoggingSettingsDialog|||Auto Fallback
+LoggingSettingsDialog|||UDP is fire-and-forget, TCP is reliable, Auto Fallback starts with UDP and switches to TCP on failures.
+LoggingSettingsDialog|||Vehicle ID:
+LoggingSettingsDialog|||Optional identifier
+LoggingSettingsDialog|||%1 KB sent
+LoggingSettingsDialog|||%1 MB sent
+LoggingSettingsDialog|||Reset
+LoggingSettingsDialog|||Error: %1
+LoggingSettingsDialog|||TLS Encryption
+LoggingSettingsDialog|||Enable TLS
+LoggingSettingsDialog|||Verify server certificate
+LoggingSettingsDialog|||CA Certificate
+LoggingSettingsDialog|||Not loaded
+LoggingSettingsDialog|||Browse
+LoggingSettingsDialog|||PEM files (*.pem)
+LoggingSettingsDialog|||Select CA Certificate
+LoggingSettingsDialog|||Client Certificate
+LoggingSettingsDialog|||Cert ✓
+LoggingSettingsDialog|||Cert
+LoggingSettingsDialog|||Key ✓
+LoggingSettingsDialog|||Key
+LoggingSettingsDialog|||Load
+LoggingSettingsDialog|||Select Client Certificate
+LoggingSettingsDialog|||Select Client Key
+LoggingSettingsDialog|||TLS Error: %1
+LoggingSettingsDialog|||Compression
+LoggingSettingsDialog|||Enable compression
+LoggingSettingsDialog|||Level
+LoggingSettingsDialog|||Compresses log data using zlib. Level 1 is fastest, level 9 provides best compression.
+LoggingSettingsDialog|||Console Buffer
+LoggingSettingsDialog|||Max entries
+LoggingSettingsDialog|||Number of log entries kept in memory for the console view. Higher values use more RAM.
+LoggingSettingsDialog|||Log History
+LoggingSettingsDialog|||Session: %1 (%2 entries)
+LoggingSettingsDialog|||Browse session:
+LoggingSettingsDialog|||%1 entries in selected session
+LoggingSettingsDialog|||Export Session
+LoggingSettingsDialog|||Delete Session
+LoggingSettingsDialog|||Confirm Delete
+LoggingSettingsDialog|||Delete session "%1" and all its log entries?
+LoggingSettingsDialog|||Export session log
+LoggingSettingsDialog|||GStreamer
+LoggingSettingsDialog|||Debug level:
+LoggingSettingsDialog|||Export
+LoggingSettingsDialog|||Format:
+LoggingSettingsDialog|||Save Log
+LoggingSettingsDialog|||Save Filtered
+LoggingSettingsDialog|||Actions
+LoggingSettingsDialog|||Clear Log
+LoggingSettingsDialog|||Flush to Disk
+LoggingSettingsDialog|||Save filtered log
+LoggingSettingsDialog|||Save app log
+MAVLink SYS_STATUS_SENSOR value|||Gyro
+MAVLink SYS_STATUS_SENSOR value|||Accelerometer
+MAVLink SYS_STATUS_SENSOR value|||Magnetometer
+MAVLink SYS_STATUS_SENSOR value|||Absolute pressure
+MAVLink SYS_STATUS_SENSOR value|||Differential pressure
+MAVLink SYS_STATUS_SENSOR value|||GPS
+MAVLink SYS_STATUS_SENSOR value|||Optical flow
+MAVLink SYS_STATUS_SENSOR value|||Computer vision position
+MAVLink SYS_STATUS_SENSOR value|||Laser based position
+MAVLink SYS_STATUS_SENSOR value|||External ground truth
+MAVLink SYS_STATUS_SENSOR value|||Angular rate control
+MAVLink SYS_STATUS_SENSOR value|||Attitude stabilization
+MAVLink SYS_STATUS_SENSOR value|||Yaw position
+MAVLink SYS_STATUS_SENSOR value|||Z/altitude control
+MAVLink SYS_STATUS_SENSOR value|||X/Y position control
+MAVLink SYS_STATUS_SENSOR value|||Motor outputs / control
+MAVLink SYS_STATUS_SENSOR value|||RC receiver
+MAVLink SYS_STATUS_SENSOR value|||Gyro 2
+MAVLink SYS_STATUS_SENSOR value|||Accelerometer 2
+MAVLink SYS_STATUS_SENSOR value|||Magnetometer 2
+MAVLink SYS_STATUS_SENSOR value|||GeoFence
+MAVLink SYS_STATUS_SENSOR value|||AHRS
+MAVLink SYS_STATUS_SENSOR value|||Terrain
+MAVLink SYS_STATUS_SENSOR value|||Motors reversed
+MAVLink SYS_STATUS_SENSOR value|||Logging
+MAVLink SYS_STATUS_SENSOR value|||Battery
+MAVLink SYS_STATUS_SENSOR value|||Proximity
+MAVLink SYS_STATUS_SENSOR value|||Satellite Communication
+MAVLink SYS_STATUS_SENSOR value|||Pre-Arm Check
+MAVLink SYS_STATUS_SENSOR value|||Avoidance/collision prevention
+MAVLink SYS_STATUS_SENSOR value|||Propulsion
+MAVLink unknown SYS_STATUS_SENSOR value|||Unknown sensor
+MAVLinkConsolePage|||Provides a connection to the vehicle's system shell.
+MAVLinkConsolePage|||Enter Commands here...
+MAVLinkConsolePage|||Send
+MAVLinkInspectorController|||System %1
+MAVLinkInspectorPage|||Actual Rate:
+MAVLinkInspectorPage|||Hz
+MAVLinkInspectorPage|||Set Rate:
+MAVLinkInspectorPage|||Disabled
+MAVLinkInspectorPage|||Default
+MAVLinkInspectorPage|||1Hz
+MAVLinkInspectorPage|||2Hz
+MAVLinkInspectorPage|||3Hz
+MAVLinkInspectorPage|||4Hz
+MAVLinkInspectorPage|||5Hz
+MAVLinkInspectorPage|||6Hz
+MAVLinkInspectorPage|||7Hz
+MAVLinkInspectorPage|||8Hz
+MAVLinkInspectorPage|||9Hz
+MAVLinkInspectorPage|||10Hz
+MAVLinkInspectorPage|||25Hz
+MAVLinkInspectorPage|||50Hz
+MAVLinkInspectorPage|||100Hz
+MAVLinkProtocol|||Unable to save telemetry log. Error opening source '%1': '%2'.
+MAVLinkProtocol|||Unable to save telemetry log. Error opening destination '%1': '%2'.
+MAVLinkProtocol|||Unable to save telemetry log. Error reading source '%1': '%2'.
+MAVLinkProtocol|||Unable to save telemetry log. Error writing destination '%1': '%2'.
+MAVLinkProtocol|||Unable to finalize telemetry log '%1': '%2'.
+MAVLinkProtocol|||Unable to save telemetry log. Application save directory is not set.
+MAVLinkProtocol|||Unable to save telemetry log. Telemetry save directory "%1" does not exist.
+MAV_TYPE|||Generic micro air vehicle
+MAV_TYPE|||Fixed wing aircraft
+MAV_TYPE|||Quadrotor
+MAV_TYPE|||Coaxial helicopter
+MAV_TYPE|||Normal helicopter with tail rotor.
+MAV_TYPE|||Ground installation
+MAV_TYPE|||Operator control unit / ground control station
+MAV_TYPE|||Airship, controlled
+MAV_TYPE|||Free balloon, uncontrolled
+MAV_TYPE|||Rocket
+MAV_TYPE|||Ground rover
+MAV_TYPE|||Surface vessel, boat, ship
+MAV_TYPE|||Submarine
+MAV_TYPE|||Spacecraft, orbiter
+MAV_TYPE|||Hexarotor
+MAV_TYPE|||Octorotor
+MAV_TYPE|||trirotor
+MAV_TYPE|||Flapping wing
+MAV_TYPE|||Kite
+MAV_TYPE|||Onboard companion controller
+MAV_TYPE|||Two-rotor VTOL using control surfaces in vertical operation in addition. Tailsitter
+MAV_TYPE|||Quad-rotor VTOL using a V-shaped quad config in vertical operation. Tailsitter
+MAV_TYPE|||Tiltrotor VTOL
+MAV_TYPE|||VTOL Fixedrotor
+MAV_TYPE|||VTOL Tailsitter
+MAV_TYPE|||VTOL Tiltwing
+MAV_TYPE|||VTOL reserved 5
+MAV_TYPE|||Onboard gimbal
+MAV_TYPE|||Onboard ADSB peripheral
+MainStatusIndicator|||Not Ready
+MainStatusIndicator|||Armed
+MainStatusIndicator|||Flying
+MainStatusIndicator|||Landing
+MainStatusIndicator|||FW(vtol)
+MainStatusIndicator|||MR(vtol)
+MainStatusIndicator|||Sensor Status
+MainStatusIndicator|||Disarm
+MainStatusIndicator|||Comms Lost
+MainStatusIndicator|||Ready
+MainStatusIndicator|||Disconnected - Click to manually connect
+MainStatusIndicator|||Force Arm
+MainStatusIndicator|||Arm
+MainStatusIndicator|||Primary Link
+MainStatusIndicator|||Vehicle Messages
+MainStatusIndicator|||No new vehicle messages
+MainStatusIndicator|||Overall Status
+MainStatusIndicator|||Edit Parameter
+MainStatusIndicator|||Force arming bypasses pre-arm checks. Use with caution.
+MainStatusIndicator|||Allow Force Arm
+MainStatusIndicator|||Vehicle Parameters
+MainStatusIndicator|||Configure
+MainStatusIndicator|||Vehicle Configuration
+MainStatusIndicatorOfflinePage|||Select Link to Connect
+MainStatusIndicatorOfflinePage|||No Links Configured
+MainStatusIndicatorOfflinePage|||Connected
+MainStatusIndicatorOfflinePage|||Communication Links
+MainStatusIndicatorOfflinePage|||Configure
+MainStatusIndicatorOfflinePage|||Comm Links
+MainStatusIndicatorOfflinePage|||AutoConnect
+MainStatusIndicatorOfflinePage|||Pixhawk
+MainStatusIndicatorOfflinePage|||SiK Radio
+MainStatusIndicatorOfflinePage|||LibrePilot
+MainStatusIndicatorOfflinePage|||UDP
+MainStatusIndicatorOfflinePage|||RTK
+MainWindow|||Analyze Tools
+MainWindow|||Vehicle Configuration
+MainWindow|||Application Settings
+MainWindow|||Close %1
+MainWindow|||Please correct the invalid value before continuing
+MainWindow|||You have a mission edit in progress which has not been saved/uploaded. If you close you will lose changes. Are you sure you want to close?
+MainWindow|||You have pending parameter updates to a vehicle. If you close you will lose changes. Are you sure you want to close?
+MainWindow|||There are still active connections to vehicles. Are you sure you want to exit?
+MainWindow|||Debug Touch Areas
+MainWindow|||Touch Area display toggled
+MainWindow|||Advanced Mode
+MainWindow|||Turn off Advanced Mode?
+MainWindow|||Vehicle Error
+MainWindow|||Additional errors received
+MapProviderSettings|||Provider
+MapProviderSettings|||Type
+MapProviderSettings|||Elevation Provider
+MavCommandQueue|||Unable to send command: %1.
+MavCommandQueue|||Internal error - MAV_COMP_ID_ALL not supported
+MavCommandQueue|||Waiting on previous response to same command.
+MavCommandQueue|||Unable to send command: Vehicle is not connected.
+MavCommandQueue|||Vehicle did not respond to command: %1
+MavCommandQueue|||%1 command temporarily rejected
+MavCommandQueue|||%1 command denied
+MavCommandQueue|||%1 command not supported
+MavCommandQueue|||%1 command failed
+MavlinkActionManager|||Failed to load custom actions file: `%1` error: `%2`
+MavlinkActionManager|||Custom actions file - incorrect format: %1
+MavlinkActionManager|||Custom actions file - incorrect format: JsonValue not an object
+MavlinkActionSettings|||MAVLink Actions
+MavlinkActionSettings|||Action JSON files should be created in the '%1' folder.
+MavlinkActionSettings|||<None>
+MavlinkActionSettings|||Fly View Actions
+MavlinkActionSettings|||Joystick Actions
+MavlinkActionsSettings|||Support for Fly View custom actions has changed. The location of the files has changed. You will need to setup up your settings again from Fly View Settings.
+MavlinkActionsSettings|||Support for Joystick custom actions has changed. The format and location of the files has changed. New setting is available from Fly View Settings. File format is documented in user guide. Delete the %1 file to disable this warning
+MavlinkLinkStatus|||Link Status (Current Vehicle)
+MavlinkLinkStatus|||Not Connected
+MavlinkLinkStatus|||Total messages sent (computed)
+MavlinkLinkStatus|||Total messages received
+MavlinkLinkStatus|||Total message loss
+MavlinkLinkStatus|||Loss rate
+MavlinkLinkStatus|||Signing
+MavlinkLinkStatus|||On
+MavlinkLinkStatus|||Off
+MissionCommandDialog|||Select Mission Command
+MissionController|||Plan Info
+MissionController|||Defaults
+MissionController|||Mission Items
+MissionController|||GeoFence
+MissionController|||Rally Points
+MissionController|||Transform
+MissionDefaultsEditor|||Alt Frame
+MissionDefaultsEditor|||Waypoints Altitude
+MissionDefaultsEditor|||Flight Speed
+MissionDefaultsEditor|||Expected Vehicle Speeds
+MissionDefaultsEditor|||The following speed values are used to calculate total mission time. They do not affect the flight speed for the mission.
+MissionDefaultsEditor|||FW - Flight speed
+MissionDefaultsEditor|||Flight speed
+MissionDefaultsEditor|||MR - Flight speed
+MissionDefaultsEditor|||MR - Ascent speed
+MissionDefaultsEditor|||Ascent speed
+MissionDefaultsEditor|||MR - Descent speed
+MissionDefaultsEditor|||Descent speed
+MissionSettingsItem|||H
+MissionSettingsItem|||Home
+MissionSettingsItem|||Initial Camera Settings
+MissionStats||| deg
+MissionStats|||N/A
+MissionStats|||Selected Waypoint
+MissionStats|||Alt diff:
+MissionStats|||Azimuth:
+MissionStats|||Dist prev WP:
+MissionStats|||Gradient:
+MissionStats|||Heading:
+MissionStats|||Total Mission
+MissionStats|||Distance:
+MissionStats|||Max telem dist:
+MissionStats|||Time:
+MissionStats|||Battery
+MissionStats|||Batteries required:
+Mixer::ChannelConfigInstanceVirtualAxis|||Custom
+Mixer::ChannelConfigInstanceVirtualAxis|||Upwards
+Mixer::ChannelConfigInstanceVirtualAxis|||Downwards
+Mixer::ChannelConfigInstanceVirtualAxis|||Forwards
+Mixer::ChannelConfigInstanceVirtualAxis|||Backwards
+Mixer::ChannelConfigInstanceVirtualAxis|||Leftwards
+Mixer::ChannelConfigInstanceVirtualAxis|||Rightwards
+Mixer::Mixers|||Axis
+MockLink|||Send status text + voice
+MockLink|||Enable camera
+MockLink|||Enable gimbal
+MockLink|||PX4 Vehicle
+MockLink|||APM ArduCopter Vehicle
+MockLink|||APM ArduPlane Vehicle
+MockLink|||APM ArduSub Vehicle
+MockLink|||APM ArduRover Vehicle
+MockLink|||Generic Vehicle
+MockLink|||Stop One MockLink
+MockLinkSettings|||Send Status Text and Voice
+MockLinkSettings|||Enable Camera
+MockLinkSettings|||Enable Gimbal
+MockLinkSettings|||Increment Vehicle Id
+MockLinkSettings|||Firmware Type
+MockLinkSettings|||PX4 Pro
+MockLinkSettings|||ArduPilot
+MockLinkSettings|||Generic MAVLink
+MockLinkSettings|||Vehicle Type
+MockLinkSettings|||ArduCopter
+MockLinkSettings|||ArduPlane
+MockLinkSettings|||Camera Capabilities
+MockLinkSettings|||Gimbal Capabilities
+MotorAssignment|||<br />No motors are assigned yet.
+By saying yes, all motors will be assigned to the first %1 channels of the selected output (%2)
+ (you can also first assign all motors, then start the identification).<br />
+MotorAssignment|||<br />Motors are currently assigned to a different output.
+By saying yes, all motors will be reassigned to the first %1 channels of the selected output (%2).<br />
+MotorAssignment|||Not all motors are assigned yet. Either clear all existing assignments or assign all motors to an output.
+MotorAssignment|||This will automatically spin individual motors at 15% thrust.<br /><br />
+<b>Warning: Only proceed if you removed all propellers</b>.<br />
+%1
+<br />
+The procedure is as following:<br />
+- After confirming, the first motor starts to spin for 0.5 seconds.<br />
+- Then click on the motor that was spinning.<br />
+- The above steps are repeated for all motors.<br />
+- The motor output functions will automatically be reassigned by the selected order.<br />
+<br />
+Do you wish to proceed?
+MotorAssignment|||Actuator test command failed
+MotorComponent|||Throttle
+MotorComponent|||%
+MotorComponent|||Make sure you remove all props.
+MotorComponent|||Stop
+MotorComponent|||Careful : Motors are enabled
+MotorComponent|||Propellers are removed - Enable slider and motors
+MultiVehicleSelector|||N/A
+MultiVehicleSelector|||Enable Multi-Vehicle Panel
+NTRIPHttpTransport|||No data received for %1 seconds
+NTRIPHttpTransport|||Invalid mountpoint name (contains control characters)
+NTRIPHttpTransport|||HTTP response header too large
+NTRIPHttpTransport|||Authentication failed (401): check username and password
+NTRIPHttpTransport|||HTTP %1
+NTRIPHttpTransport|||HTTP %1: %2
+NTRIPHttpTransport|||Invalid HTTP response from caster
+NTRIPManager|||No host address
+NTRIPManager|||Invalid port
+NTRIPManager|||Connecting to %1:%2...
+NTRIPManager|||Connected
+NTRIPManager|||Disconnected
+NTRIPManager|||Reconnecting in %1s...
+NTRIPManager|||Host address is empty
+NTRIPSourceTableFetcher|||No reply received
+NTRIPSourceTableFetcher|||Response does not contain a valid source table
+NmeaGpsSettings|||NMEA GPS
+NmeaGpsSettings|||Device
+NmeaGpsSettings|||Disabled
+NmeaGpsSettings|||UDP Port
+NmeaGpsSettings|||Serial <none available>
+NmeaGpsSettings|||Baudrate
+NmeaGpsSettings|||Custom
+NmeaGpsSettings|||Custom Baud Rate
+NmeaGpsSettings|||NMEA stream UDP port
+NtripConnectionStatus|||Connection
+NtripConnectionStatus|||Disconnected
+NtripConnectionStatus|||Connecting…
+NtripConnectionStatus|||Reconnecting…
+NtripConnectionStatus|||Disconnect
+NtripConnectionStatus|||Connect
+NtripConnectionStatus|||%1 messages
+NtripConnectionStatus|||GGA: %1
+NtripMountpointBrowser|||Mountpoint
+NtripMountpointBrowser|||Browse
+NtripMountpointBrowser|||Fetching mountpoints…
+NtripMountpointBrowser|||(selected)
+NtripMountpointBrowser|||Selected
+NtripMountpointBrowser|||Select
+NtripServerSettings|||Server
+NtripServerSettings|||Hide
+NtripServerSettings|||Show
+OfflineMapEditor|||System Wide Tile Cache
+OfflineMapEditor|||Zoom Levels:
+OfflineMapEditor|||Total:
+OfflineMapEditor|||Unique:
+OfflineMapEditor|||Downloaded:
+OfflineMapEditor|||Error Count:
+OfflineMapEditor|||Size:
+OfflineMapEditor|||Tile Count:
+OfflineMapEditor|||Resume Download
+OfflineMapEditor|||Cancel Download
+OfflineMapEditor|||Delete
+OfflineMapEditor|||Ok
+OfflineMapEditor|||Close
+OfflineMapEditor|||Cancel
+OfflineMapEditor|||Show zoom previews
+OfflineMapEditor|||Min Zoom: %1
+OfflineMapEditor|||Max Zoom: %1
+OfflineMapEditor|||Add New Set
+OfflineMapEditor|||Name:
+OfflineMapEditor|||Map type:
+OfflineMapEditor|||Fetch elevation data
+OfflineMapEditor|||Min/Max Zoom Levels
+OfflineMapEditor|||Est Size:
+OfflineMapEditor|||Too many tiles
+OfflineMapEditor|||Tile set with this name already exists
+OfflineMapEditor|||Download
+OfflineMapEditor|||Error Message
+OfflineMapEditor|||Confirm Delete
+OfflineMapEditor|||This will delete all tiles INCLUDING the tile sets you have created yourself.
+
+Is this really what you want?
+OfflineMapEditor|||Delete %1 and all its tiles.
+
+Is this really what you want?
+OfflineMapInfo|||Edit
+OfflineMapSettings|||Offline Maps
+OfflineMapSettings|||Download map tiles for use when offline
+OfflineMapSettings|||Add New Set
+OfflineMapSettings|||Add
+OfflineMapSettings|||Import Map Tiles
+OfflineMapSettings|||Import
+OfflineMapSettings|||Export Map Tiles
+OfflineMapSettings|||Export
+OfflineMapSettings|||Exporting
+OfflineMapSettings|||Importing
+OfflineMapSettings|||Tile Sets (*.%1)
+OfflineMapSettings|||Export Selected Tile Sets
+OfflineMapSettings|||Export Tiles
+OfflineMapSettings|||Import TileSets
+OfflineMapSettings|||Import Tiles
+OfflineMapSettings|||Append to existing sets
+OfflineMapSettings|||Replace existing sets
+OfflineMapSettings|||Error Message
+OnboardLogController|||Waiting
+OnboardLogController|||Error
+OnboardLogController|||Available
+OnboardLogController|||Downloaded
+OnboardLogController|||Canceled
+OnboardLogFtpController|||Available
+OnboardLogFtpController|||Waiting
+OnboardLogFtpController|||Downloading
+OnboardLogFtpController|||Error
+OnboardLogFtpController|||Downloaded
+OnboardLogFtpController|||Canceled
+OnboardLogFtpPage|||Onboard Logs (FTP) lists log files on the vehicle's SD card via MAVLink FTP. Click Refresh to query the vehicle.
+OnboardLogFtpPage|||Id
+OnboardLogFtpPage|||Date
+OnboardLogFtpPage|||Date Unknown
+OnboardLogFtpPage|||Size
+OnboardLogFtpPage|||Status
+OnboardLogFtpPage|||Refresh
+OnboardLogFtpPage|||Log Refresh
+OnboardLogFtpPage|||You must be connected to a vehicle in order to download logs.
+OnboardLogFtpPage|||Download
+OnboardLogFtpPage|||Log Download
+OnboardLogFtpPage|||You must select at least one log file to download.
+OnboardLogFtpPage|||Select save directory
+OnboardLogFtpPage|||Cancel
+OnboardLogPage|||Onboard Logs allows you to download binary log files from your vehicle. Click Refresh to get list of available logs.
+OnboardLogPage|||Id
+OnboardLogPage|||Date
+OnboardLogPage|||Date Unknown
+OnboardLogPage|||Size
+OnboardLogPage|||Status
+OnboardLogPage|||Refresh
+OnboardLogPage|||Onboard Log Refresh
+OnboardLogPage|||You must be connected to a vehicle in order to download onboard logs.
+OnboardLogPage|||Download
+OnboardLogPage|||Onboard Log
+OnboardLogPage|||You must select at least one onboard log file to download.
+OnboardLogPage|||Select save directory
+OnboardLogPage|||Erase All
+OnboardLogPage|||Delete All Onboard Log Files
+OnboardLogPage|||All onboard log files will be erased permanently. Is this really what you want?
+OnboardLogPage|||Cancel
+OpticalFlowSensor|||Optical Flow Camera
+PIDTuning|||Select Tuning:
+PIDTuning|||sec
+PIDTuning|||Use auto-tuning
+PIDTuning|||Use manual tuning
+PX4BatteryIndicator|||Low Battery Failsafe
+PX4BatteryIndicator|||Vehicle Action
+PX4BatteryIndicator|||Warning Level
+PX4BatteryIndicator|||Critical Level
+PX4BatteryIndicator|||Emergency Level
+PX4FirmwarePlugin|||Unable to pause vehicle.
+PX4FirmwarePlugin|||Vehicle does not support guided rotate
+PX4FirmwarePlugin|||Unable to start takeoff: Vehicle rejected arming.
+PX4FirmwarePlugin|||Unable to start takeoff: Vehicle not changing to %1 flight mode.
+PX4FirmwareUpgradeThreadWorker|||Rebooting board
+PX4FlightBehavior|||Flight Behavior
+PX4FlightBehavior|||Configure mission, position hold, and altitude mode settings.
+PX4FlightBehaviorCopter|||Enable responsiveness slider (if enabled, acceleration limit parameters and others are automatically set)
+PX4FlightBehaviorCopter|||Responsiveness
+PX4FlightBehaviorCopter|||A higher value makes the vehicle react faster. Be aware that this affects braking as well, and a combination of slow responsiveness with high maximum velocity will lead to long braking distances.
+PX4FlightBehaviorCopter|||Warning: a high responsiveness requires a vehicle with large thrust-to-weight ratio. The vehicle might lose altitude otherwise.
+PX4FlightBehaviorCopter|||Enable horizontal velocity slider (if enabled, individual velocity limit parameters are automatically set)
+PX4FlightBehaviorCopter|||Horizontal velocity (m/s)
+PX4FlightBehaviorCopter|||Limit the horizonal velocity (applies to all modes).
+PX4FlightBehaviorCopter|||Enable vertical velocity slider (if enabled, individual velocity limit parameters are automatically set)
+PX4FlightBehaviorCopter|||Vertical velocity (m/s)
+PX4FlightBehaviorCopter|||Limit the vertical velocity (applies to all modes).
+PX4FlightBehaviorCopter|||Mission Turning Radius
+PX4FlightBehaviorCopter|||Increasing this leads to rounder turns in missions (corner cutting). Use the minimum value for accurate corner tracking.
+PX4FlightModeIndicator|||RTL Altitude
+PX4FlightModeIndicator|||GeoFence
+PX4FlightModeIndicator|||Breach Action
+PX4FlightModeIndicator|||Max Distance
+PX4FlightModeIndicator|||Max Altitude
+PX4FlightModes|||Flight Modes
+PX4FlightModes|||Flight Mode Settings
+PX4FlightModes|||Mode Channel
+PX4FlightModes|||Flight Mode %1
+PX4FlightModes|||Switch Settings
+PX4LogControl|||MAVLink 2.0 Logging (PX4 Pro Only)
+PX4LogControl|||Manual Start/Stop:
+PX4LogControl|||Start Logging
+PX4LogControl|||Stop Logging
+PX4LogControl|||Enable automatic logging
+PX4LogFileManager|||Saved Log Files
+PX4LogFileManager|||Uploaded
+PX4LogFileManager|||Check All
+PX4LogFileManager|||Check None
+PX4LogFileManager|||Delete Selected
+PX4LogFileManager|||Delete Selected Log Files
+PX4LogFileManager|||Confirm deleting selected log files?
+PX4LogFileManager|||Upload Selected
+PX4LogFileManager|||MAVLink Logging
+PX4LogFileManager|||Please enter an email address before uploading MAVLink log files.
+PX4LogFileManager|||Upload Selected Log Files
+PX4LogFileManager|||Confirm uploading selected log files?
+PX4LogFileManager|||Cancel
+PX4LogFileManager|||Cancel Upload
+PX4LogFileManager|||Confirm canceling the upload process?
+PX4LogUploadSettings|||MAVLink 2.0 Log Uploads (PX4 Pro Only)
+PX4LogUploadSettings|||MAVLink Logging
+PX4LogUploadSettings|||Please enter an email address before uploading MAVLink log files.
+PX4LogUploadSettings|||Email address for Log Upload:
+PX4LogUploadSettings|||Default Description:
+PX4LogUploadSettings|||Default Upload URL:
+PX4LogUploadSettings|||Video URL:
+PX4LogUploadSettings|||Wind Speed
+PX4LogUploadSettings|||Please Select
+PX4LogUploadSettings|||Calm
+PX4LogUploadSettings|||Breeze
+PX4LogUploadSettings|||Gale
+PX4LogUploadSettings|||Storm
+PX4LogUploadSettings|||Flight Rating
+PX4LogUploadSettings|||Crashed (Pilot Error)
+PX4LogUploadSettings|||Crashed (Software or Hardware issue)
+PX4LogUploadSettings|||Unsatisfactory
+PX4LogUploadSettings|||Good
+PX4LogUploadSettings|||Great
+PX4LogUploadSettings|||Additional Feedback:
+PX4LogUploadSettings|||Make this log publicly available
+PX4LogUploadSettings|||Enable automatic log uploads
+PX4LogUploadSettings|||Delete log file after uploading
+PX4MainStatusIndicator|||Ground Control Comm Loss Failsafe
+PX4MainStatusIndicator|||Vehicle Action
+PX4MainStatusIndicator|||Loss Timeout
+PX4RadioComponent|||Configure and calibrate your transmitter and assign control channels.
+PX4TuningComponent|||PID Tuning
+PX4TuningComponent|||Configure rate, attitude, and velocity controller gains.
+PX4TuningComponentCopterAll|||Rate Controller
+PX4TuningComponentCopterAll|||Attitude Controller
+PX4TuningComponentCopterAll|||Velocity Controller
+PX4TuningComponentCopterAll|||Position Controller
+PX4TuningComponentCopterAttitude|||Roll
+PX4TuningComponentCopterAttitude|||Proportional Gain (MC_ROLL_P)
+PX4TuningComponentCopterAttitude|||Increase for more responsiveness, reduce if the attitude overshoots.
+PX4TuningComponentCopterAttitude|||Pitch
+PX4TuningComponentCopterAttitude|||Proportional Gain (MC_PITCH_P)
+PX4TuningComponentCopterAttitude|||Yaw
+PX4TuningComponentCopterAttitude|||Proportional Gain (MC_YAW_P)
+PX4TuningComponentCopterAttitude|||Increase for more responsiveness, reduce if the attitude overshoots (there is only a setpoint when yaw is fixed, i.e. when centering the stick).
+PX4TuningComponentCopterPosition|||Position control mode (set this to 'simple' during tuning):
+PX4TuningComponentCopterPosition|||Horizontal
+PX4TuningComponentCopterPosition|||Horizontal (Y direction, sidewards)
+PX4TuningComponentCopterPosition|||Proportional gain (MPC_XY_P)
+PX4TuningComponentCopterPosition|||Increase for more responsiveness, reduce if the position overshoots (there is only a setpoint when hovering, i.e. when centering the stick).
+PX4TuningComponentCopterPosition|||Vertical
+PX4TuningComponentCopterPosition|||Proportional gain (MPC_Z_P)
+PX4TuningComponentCopterRate|||Airmode (disable during tuning) <b><a href="https://docs.px4.io/main/en/config_mc/pid_tuning_guide_multicopter.html#airmode-mixer-saturation">?</a></b>
+PX4TuningComponentCopterRate|||Thrust curve <b><a href="https://docs.px4.io/main/en/config_mc/pid_tuning_guide_multicopter.html#thrust-curve">?</a></b>
+PX4TuningComponentCopterRate|||Rate
+PX4TuningComponentCopterRate|||deg/s
+PX4TuningComponentCopterRate|||Roll
+PX4TuningComponentCopterRate|||Overall Multiplier (MC_ROLLRATE_K)
+PX4TuningComponentCopterRate|||Multiplier for P, I and D gains: increase for more responsiveness, reduce if the rates overshoot (and increasing D does not help).
+PX4TuningComponentCopterRate|||Differential Gain (MC_ROLLRATE_D)
+PX4TuningComponentCopterRate|||Damping: increase to reduce overshoots and oscillations, but not higher than really needed.
+PX4TuningComponentCopterRate|||Integral Gain (MC_ROLLRATE_I)
+PX4TuningComponentCopterRate|||Generally does not need much adjustment, reduce this when seeing slow oscillations.
+PX4TuningComponentCopterRate|||Pitch
+PX4TuningComponentCopterRate|||Overall Multiplier (MC_PITCHRATE_K)
+PX4TuningComponentCopterRate|||Differential Gain (MC_PITCHRATE_D)
+PX4TuningComponentCopterRate|||Integral Gain (MC_PITCHRATE_I)
+PX4TuningComponentCopterRate|||Yaw
+PX4TuningComponentCopterRate|||Overall Multiplier (MC_YAWRATE_K)
+PX4TuningComponentCopterRate|||Integral Gain (MC_YAWRATE_I)
+PX4TuningComponentCopterVelocity|||Position control mode (set this to 'simple' during tuning):
+PX4TuningComponentCopterVelocity|||Horizontal
+PX4TuningComponentCopterVelocity|||Horizontal (Y direction, sidewards)
+PX4TuningComponentCopterVelocity|||Proportional gain (MPC_XY_VEL_P_ACC)
+PX4TuningComponentCopterVelocity|||Increase for more responsiveness, reduce if the velocity overshoots (and increasing D does not help).
+PX4TuningComponentCopterVelocity|||Integral gain (MPC_XY_VEL_I_ACC)
+PX4TuningComponentCopterVelocity|||Increase to reduce steady-state error (e.g. wind)
+PX4TuningComponentCopterVelocity|||Differential gain (MPC_XY_VEL_D_ACC)
+PX4TuningComponentCopterVelocity|||Damping: increase to reduce overshoots and oscillations, but not higher than really needed.
+PX4TuningComponentCopterVelocity|||Vertical
+PX4TuningComponentCopterVelocity|||Proportional gain (MPC_Z_VEL_P_ACC)
+PX4TuningComponentCopterVelocity|||Integral gain (MPC_Z_VEL_I_ACC)
+PX4TuningComponentCopterVelocity|||Increase to reduce steady-state error
+PX4TuningComponentCopterVelocity|||Differential gain (MPC_Z_VEL_D_ACC)
+PX4TuningComponentPlaneAll|||Rate Controller
+PX4TuningComponentPlaneAttitude|||Roll
+PX4TuningComponentPlaneAttitude|||Time constant (FW_R_TC)
+PX4TuningComponentPlaneAttitude|||The latency between a roll step input and the achieved setpoint (inverse to a P gain)
+PX4TuningComponentPlaneAttitude|||Pitch
+PX4TuningComponentPlaneAttitude|||Time Constant (FW_P_TC)
+PX4TuningComponentPlaneAttitude|||The latency between a pitch step input and the achieved setpoint (inverse to a P gain)
+PX4TuningComponentPlaneRate|||Roll
+PX4TuningComponentPlaneRate|||Porportional gain (FW_RR_P)
+PX4TuningComponentPlaneRate|||Porportional gain.
+PX4TuningComponentPlaneRate|||Differential Gain (FW_RR_D)
+PX4TuningComponentPlaneRate|||Damping: increase to reduce overshoots and oscillations, but not higher than really needed.
+PX4TuningComponentPlaneRate|||Integral Gain (FW_RR_I)
+PX4TuningComponentPlaneRate|||Generally does not need much adjustment, reduce this when seeing slow oscillations.
+PX4TuningComponentPlaneRate|||Feedforward Gain (FW_RR_FF)
+PX4TuningComponentPlaneRate|||Feedforward gused to compensate for aerodynamic damping.
+PX4TuningComponentPlaneRate|||Pitch
+PX4TuningComponentPlaneRate|||Porportional Gain (FW_PR_P)
+PX4TuningComponentPlaneRate|||Porportional Gain.
+PX4TuningComponentPlaneRate|||Differential Gain (FW_PR_D)
+PX4TuningComponentPlaneRate|||Integral Gain (FW_PR_I)
+PX4TuningComponentPlaneRate|||Feedforward Gain (FW_PR_FF)
+PX4TuningComponentPlaneRate|||Yaw
+PX4TuningComponentPlaneRate|||Porportional Gain (FW_YR_P)
+PX4TuningComponentPlaneRate|||Integral Gain (FW_YR_D)
+PX4TuningComponentPlaneRate|||Integral Gain (FW_YR_I)
+PX4TuningComponentPlaneRate|||Feedforward Gain (FW_YR_FF)
+PX4TuningComponentPlaneRate|||Roll control to yaw feedforward (FW_RLL_TO_YAW_FF)
+PX4TuningComponentPlaneRate|||Used to counteract the adverse yaw effect for fixed wings.
+PX4TuningComponentPlaneTECS|||Altitude & Airspeed
+PX4TuningComponentPlaneTECS|||Height rate feed forward (FW_T_HRATE_FF)
+PX4TuningComponentPlaneTECS|||TODO
+PX4TuningComponentSpacecraftAll|||Rate Controller
+PX4TuningComponentSpacecraftAll|||Attitude Controller
+PX4TuningComponentSpacecraftAll|||Velocity Controller
+PX4TuningComponentSpacecraftAll|||Position Controller
+PX4TuningComponentSpacecraftAttitude|||Roll
+PX4TuningComponentSpacecraftAttitude|||Proportional Gain (SC_ROLL_P)
+PX4TuningComponentSpacecraftAttitude|||Increase for more responsiveness, reduce if the attitude overshoots.
+PX4TuningComponentSpacecraftAttitude|||Pitch
+PX4TuningComponentSpacecraftAttitude|||Proportional Gain (SC_PITCH_P)
+PX4TuningComponentSpacecraftAttitude|||Yaw
+PX4TuningComponentSpacecraftAttitude|||Proportional Gain (SC_YAW_P)
+PX4TuningComponentSpacecraftAttitude|||Increase for more responsiveness, reduce if the attitude overshoots (there is only a setpoint when yaw is fixed, i.e. when centering the stick).
+PX4TuningComponentSpacecraftPosition|||Position
+PX4TuningComponentSpacecraftPosition|||Position (X direction)
+PX4TuningComponentSpacecraftPosition|||Proportional gain (SPC_POS_P)
+PX4TuningComponentSpacecraftPosition|||Increase for more responsiveness, reduce if the position overshoots.
+PX4TuningComponentSpacecraftPosition|||Integral gain (SPC_POS_I)
+PX4TuningComponentSpacecraftPosition|||Increase for faster convergence to zero steady-state error.
+PX4TuningComponentSpacecraftPosition|||Integral gain limit (SPC_POS_I_LIM)
+PX4TuningComponentSpacecraftPosition|||Anti-windup limit for the position controller integral component.
+PX4TuningComponentSpacecraftPosition|||Position Error Limit (SPC_VEL_MAX)
+PX4TuningComponentSpacecraftRate|||Rate
+PX4TuningComponentSpacecraftRate|||deg/s
+PX4TuningComponentSpacecraftRate|||Roll
+PX4TuningComponentSpacecraftRate|||Overall Multiplier (SC_ROLLRATE_K)
+PX4TuningComponentSpacecraftRate|||Multiplier for P, I and D gains: increase for more responsiveness, reduce if the rates overshoot (and increasing D does not help).
+PX4TuningComponentSpacecraftRate|||Differential Gain (SC_ROLLRATE_D)
+PX4TuningComponentSpacecraftRate|||Damping: increase to reduce overshoots and oscillations, but not higher than really needed.
+PX4TuningComponentSpacecraftRate|||Integral Gain (SC_ROLLRATE_I)
+PX4TuningComponentSpacecraftRate|||Generally does not need much adjustment, reduce this when seeing slow oscillations.
+PX4TuningComponentSpacecraftRate|||Pitch
+PX4TuningComponentSpacecraftRate|||Overall Multiplier (SC_PITCHRATE_K)
+PX4TuningComponentSpacecraftRate|||Differential Gain (SC_PITCHRATE_D)
+PX4TuningComponentSpacecraftRate|||Integral Gain (SC_PITCHRATE_I)
+PX4TuningComponentSpacecraftRate|||Yaw
+PX4TuningComponentSpacecraftRate|||Overall Multiplier (SC_YAWRATE_K)
+PX4TuningComponentSpacecraftRate|||Derivative Gain (SC_YAWRATE_D)
+PX4TuningComponentSpacecraftRate|||Integral Gain (SC_YAWRATE_I)
+PX4TuningComponentSpacecraftRate|||Integral Limit (SC_YR_INT_LIM)
+PX4TuningComponentSpacecraftRate|||Increase if the robot still has a steady-state error at maximum integral gain.
+PX4TuningComponentSpacecraftVelocity|||Velocity
+PX4TuningComponentSpacecraftVelocity|||Velocity (X axis)
+PX4TuningComponentSpacecraftVelocity|||Proportional gain (SPC_VEL_P)
+PX4TuningComponentSpacecraftVelocity|||Increase for more responsiveness, reduce if the velocity overshoots (and increasing D does not help).
+PX4TuningComponentSpacecraftVelocity|||Differential gain (SPC_VEL_D)
+PX4TuningComponentSpacecraftVelocity|||Damping: increase to reduce overshoots and oscillations, but not higher than really needed.
+PX4TuningComponentSpacecraftVelocity|||Integral gain (SPC_VEL_I)
+PX4TuningComponentSpacecraftVelocity|||Increase to reduce steady-state error (e.g. wind)
+PX4TuningComponentSpacecraftVelocity|||Integral gain Limiter (SPC_VEL_I_LIM)
+PX4TuningComponentSpacecraftVelocity|||Increase to enlarge the allowed integral compensation.
+PX4TuningComponentVTOL|||Multirotor
+ParameterDiffDialog|||Load Parameters
+ParameterDiffDialog|||The following parameters from the loaded file differ from what is currently set on the Vehicle. Click 'Ok' to update them on the Vehicle.
+ParameterDiffDialog|||There are no differences between the file loaded and the current settings on the Vehicle.
+ParameterDiffDialog|||Comp ID
+ParameterDiffDialog|||Name
+ParameterDiffDialog|||File
+ParameterDiffDialog|||Vehicle
+ParameterDiffDialog|||N/A
+ParameterDownloadProgress|||Downloading
+ParameterDownloadProgress|||Click anywhere to hide
+ParameterEditor|||Clear all favorites
+ParameterEditor|||All Files (*)
+ParameterEditor|||Search
+ParameterEditor|||Hide read-only
+ParameterEditor|||Full List
+ParameterEditor|||Modified
+ParameterEditor|||Favorites
+ParameterEditor|||Select Reset to reset all parameters to their defaults.
+
+Note that this will also completely reset everything, including UAVCAN nodes, all vehicle settings, setup and calibrations.
+ParameterEditor|||Load from file for review...
+ParameterEditorDialog|||Reset To Default
+ParameterEditorDialog|||Value Editor
+ParameterEditorDialog|||This parameter is read-only and cannot be modified.
+ParameterEditorDialog|||Value: 
+ParameterEditorDialog|||Vehicle reboot required after change
+ParameterEditorDialog|||Application restart required after change
+ParameterTableModel|||Fav
+ParameterTableModel|||Name
+ParameterTableModel|||Value
+ParameterTableModel|||Description
+PhotoVideoControl|||Camera Tracking
+PhotoVideoControl|||Zoom
+PhotoVideoControl|||Video
+PhotoVideoControl|||Photo
+PhotoVideoControl|||Free: 
+PhotoVideoControl|||Battery: 
+PhotoVideoControl|||Settings
+PhotoVideoControl|||Camera
+PhotoVideoControl|||Video Stream
+PhotoVideoControl|||Thermal View Mode
+PhotoVideoControl|||Blend Opacity
+PhotoVideoControl|||Photo Mode
+PhotoVideoControl|||Photo Interval (seconds)
+PhotoVideoControl|||Video Grid Lines
+PhotoVideoControl|||Video Screen Fit
+PhotoVideoControl|||Reset Camera Defaults
+PhotoVideoControl|||Storage
+PhotoVideoControl|||Off
+PhotoVideoControl|||Blend
+PhotoVideoControl|||Full
+PhotoVideoControl|||Picture In Picture
+PhotoVideoControl|||Single
+PhotoVideoControl|||Time Lapse
+PhotoVideoControl|||Reset
+PhotoVideoControl|||Reset Camera to Factory Settings
+PhotoVideoControl|||Confirm resetting all settings?
+PhotoVideoControl|||Format
+PhotoVideoControl|||Format Camera Storage
+PhotoVideoControl|||Confirm erasing all files?
+PlanInfoEditor|||Plan File
+PlanInfoEditor|||Untitled
+PlanInfoEditor|||Vehicle Info
+PlanInfoEditor|||Expected Home Position
+PlanInfoEditor|||Click in map to set position
+PlanInfoEditor|||Drag to move home position. Click to set new position.
+PlanInfoEditor|||Altitude (AMSL)
+PlanInfoEditor|||Actual position/alt set by vehicle at flight time.
+PlanInfoEditor|||Plan Templates
+PlanMasterController|||Supported types (*.%1 *.%2 *.%3)
+PlanMasterController|||Archive file not found: %1
+PlanMasterController|||Not a supported archive format: %1
+PlanMasterController|||Could not create temporary directory
+PlanMasterController|||Extraction failed
+PlanMasterController|||Failed to extract plan archive: %1
+PlanMasterController|||No plan file found in archive
+PlanMasterController|||All Files (*)
+PlanToolBarIndicators|||Download
+PlanToolBarIndicators|||You have unsaved changes. Downloading from the Vehicle will lose these changes. Are you sure?
+PlanToolBarIndicators|||Open Plan
+PlanToolBarIndicators|||You have unsaved/unsent changes. Loading a new Plan will lose these changes. Are you sure?
+PlanToolBarIndicators|||'%1' already exists. Overwrite?
+PlanToolBarIndicators|||Save as '%1'?
+PlanToolBarIndicators|||Save
+PlanToolBarIndicators|||Clear
+PlanToolBarIndicators|||Are you sure you want to remove all the items from the plan editor?
+PlanToolBarIndicators|||Are you sure you want to remove the plan from the vehicle and the plan editor?
+PlanToolBarIndicators|||Open
+PlanToolBarIndicators|||Click in map to add rally points
+PlanToolBarIndicators|||Save as KML
+PlanTreeView|||<Untitled>
+PlanTreeView||| items
+PlanTreeView||| points
+PlanView|||Stats
+PlanView|||Plan View - Vehicle Disconnected
+PlanView|||Plan View - Vehicle Changed
+PlanView|||The vehicle associated with the plan in the Plan View is no longer available. What would you like to do with that plan?
+PlanView|||The plan being worked on in the Plan View is not from the current vehicle. What would you like to do with that plan?
+PlanView|||Discard Unsaved Changes
+PlanView|||Discard Unsaved Changes, Load New Plan From Vehicle
+PlanView|||Load New Plan From Vehicle
+PlanView|||Keep Current Plan
+PlanView|||Keep Current Plan, Don't Update From Vehicle
+PlanView|||Insert ROI
+PlanView|||Insert Cancel ROI
+PlanView|||This Plan was created for a different firmware or vehicle type than the firmware/vehicle type of vehicle you are uploading to. This can lead to errors or incorrect behavior. It is recommended to recreate the Plan for the correct firmware/vehicle type.
+
+Click 'Ok' to upload the Plan anyway.
+PlanView|||Send To Vehicle
+PlanView|||Current mission must be paused prior to uploading a new Plan
+PlanView|||Alt Land
+PlanViewToolBar|||Syncing Mission
+PlanViewToolBar|||Done
+PlanViewToolBar|||Click anywhere to hide
+PowerComponent|||Configure battery parameters, ESC calibration, and UAVCAN bus settings.
+PowerComponentSummary|||N/A
+PowerComponentSummary|||Battery %1 Source
+PowerComponentSummary|||Battery Source
+PowerComponentSummary|||Battery %1 Full
+PowerComponentSummary|||Battery %1 Empty
+PowerComponentSummary|||Battery %1 Number of Cells
+PreFlightCheckList|||(Passed)
+PreFlightCheckList|||In Progress
+ProximityRadarValues|||–.––
+QGCApplication|||There is a newer version of %1 available. You can download it from %2.
+QGCApplication|||New Version Available
+QGCCacheWorker|||Database Not Initialized
+QGCCacheWorker|||Database Init Failed
+QGCCacheWorker|||Worker shutting down
+QGCCachedFileDownload|||Empty URL
+QGCCachedFileDownload|||Cache directory not configured
+QGCCachedFileDownload|||Download cancelled
+QGCCompassWidget|||L
+QGCCorePlugin|||Onboard Logs
+QGCCorePlugin|||Onboard Logs (FTP)
+QGCDelayButton|||Hold to Confirm
+QGCFileDialog|||Import
+QGCFileDialogController|||Missions directory is not configured
+QGCFileDialogController|||Missions save path does not exist
+QGCFileDialogController|||Failed to import file
+QGCFileDownload|||Empty URL
+QGCFileDownload|||Invalid URL: %1
+QGCFileDownload|||Unable to determine output path
+QGCFileDownload|||Cannot create output directory
+QGCFileDownload|||Cannot open output file: %1
+QGCFileDownload|||Failed to start download
+QGCFileDownload|||HTTP error %1: %2
+QGCFileDownload|||File not found (404)
+QGCFileDownload|||Connection timed out
+QGCFileDownload|||Host not found
+QGCFileDownload|||Connection refused
+QGCFileDownload|||SSL handshake failed
+QGCFileDownload|||Network error: %1
+QGCFileDownload|||Decompression failed: %1
+QGCFileDownload|||Failed to write downloaded file (%1): %2
+QGCFileDownload|||Failed to compute file hash
+QGCFileDownload|||Hash verification failed. Expected: %1, Got: %2
+QGCMAVLinkSystem|||Comp All
+QGCMAVLinkSystem|||Comp %1
+QGCMapEngineManager|||No archive path specified
+QGCMapEngineManager|||Archive file not found: %1
+QGCMapEngineManager|||Not a supported archive format: %1
+QGCMapEngineManager|||Import already in progress
+QGCMapEngineManager|||Could not create temporary directory
+QGCMapEngineManager|||Extraction failed
+QGCMapEngineManager|||No tile database found in archive
+QGCMapEngineManager|||Failed to start import task
+QGCMapPolygon|||No polygons found in file
+QGCMapPolygonVisuals|||Set Radius
+QGCMapPolygonVisuals|||Enter circle radius.
+QGCMapPolyline|||No polylines found in file
+QGCMapPolylineVisuals|||Select Polyline File
+QGCMapPolylineVisuals|||Load KML/SHP...
+QGCPopupDialog|||Ok
+QGCPopupDialog|||Open
+QGCPopupDialog|||Save
+QGCPopupDialog|||Apply
+QGCPopupDialog|||Save All
+QGCPopupDialog|||Yes
+QGCPopupDialog|||Yes to All
+QGCPopupDialog|||Retry
+QGCPopupDialog|||Reset
+QGCPopupDialog|||Restore to Defaults
+QGCPopupDialog|||Ignore
+QGCPopupDialog|||Cancel
+QGCPopupDialog|||Close
+QGCPopupDialog|||No
+QGCPopupDialog|||No to All
+QGCPopupDialog|||Abort
+QGeoFileTileCacheQGC|||The Offline Map Cache database has been upgraded. Your old map cache sets have been reset.
+QGeoTiledMapReplyQGC|||Unexpected Error
+QGeoTiledMapReplyQGC|||Empty Reply
+QGeoTiledMapReplyQGC|||Image is Empty
+QGeoTiledMapReplyQGC|||Invalid Map Provider
+QGeoTiledMapReplyQGC|||Bing Tile Above Zoom Level
+QGeoTiledMapReplyQGC|||Failed to Serialize Terrain Tile
+QGeoTiledMapReplyQGC|||Unknown Format
+QGeoTiledMapReplyQGC|||Invalid Reply
+QGeoTiledMapReplyQGC|||Invalid Cache Tile
+QGeoTiledMapReplyQGC|||Network Not Available
+QGroundControlQmlGlobal|||Rel
+QGroundControlQmlGlobal|||AGLC
+QGroundControlQmlGlobal|||AGL
+QGroundControlQmlGlobal|||Mixed
+QGroundControlQmlGlobal|||Relative (%1)
+QGroundControlQmlGlobal|||Absolute (%1)
+QGroundControlQmlGlobal|||Above Terrain Calced (%1)
+QGroundControlQmlGlobal|||Above Terrain (%1)
+QGroundControlQmlGlobal|||AMSL
+QObject|||Mismatched key and type list sizes: keys=%1 types=%2
+QObject|||Unable to parse json file: %1 error: %2 offset: %3
+QObject|||Root of json file is not object: %1
+QObject|||Json file: '%1'. %2
+QObject|||TianDiTu Road
+QObject|||TianDiTu Satellite
+QObject|||Failed to open compressed file: %1
+QObject|||File path is empty
+QObject|||Failed to open file: %1 - %2
+QSerialPort|||No error
+QSerialPort|||Device is already open
+QSerialPort|||Device is not open
+QSerialPort|||Operation timed out
+QSerialPort|||Error reading from device
+QSerialPort|||Error writing to device
+QSerialPort|||Device disappeared from the system
+QSerialPort|||Unsupported open mode
+QSerialPort|||Closing device failed
+QSerialPort|||Failed to start async read
+QSerialPort|||Failed to stop async read
+QSerialPort|||Timeout while waiting for ready read
+QSerialPort|||Timeout while waiting for bytes written
+QSerialPort|||Failed to write data one shot
+QSerialPort|||Failed to write to port
+QSerialPort|||Invalid data or size
+QSerialPort|||Failed to flush
+QSerialPort|||Failed to purge buffers
+QSerialPort|||Failed to set DTR
+QSerialPort|||Failed to set RTS
+QSerialPort|||Failed to set parameters
+QSerialPort|||Invalid baud rate value
+QSerialPort|||Custom baud rate direction is unsupported
+QSerialPort|||Failed to set baud rate
+QSerialPort|||Failed to set data bits
+QSerialPort|||Failed to set parity
+QSerialPort|||Failed to set StopBits
+QSerialPort|||Failed to set Flow Control
+QSerialPort|||Failed to set Break Enabled
+QmlTest|||Window Color
+QmlTest|||Import/Export
+QmlTest|||Light
+QmlTest|||Dark
+QmlTest|||Enabled
+QmlTest|||Value
+QmlTest|||Disabled
+QmlTest|||QGC name
+QmlTest|||Label
+QmlTest|||Button
+QmlTest|||Hover Button
+QmlTest|||Item 1
+QmlTest|||Item 2
+QmlTest|||Item 3
+QmlTest|||Radio
+QmlTest|||Check Box
+QmlTest|||Check Box Slider
+QmlTest|||SUB MENU
+RCChannelMonitor|||Not Mapped
+RCChannelMonitor|||Channel Monitor
+RCRSSIIndicator|||RSSI
+RadioComponent|||Click Ok to place your Spektrum receiver in the bind mode.
+RadioComponent|||Select the specific receiver type below:
+RadioComponent|||CRSF Bind
+RadioComponent|||Click Ok to place your CRSF receiver in the bind mode.
+RemoteControlCalibration|||Attitude Controls
+RemoteControlCalibration|||Pitch
+RemoteControlCalibration|||Roll
+RemoteControlCalibration|||Yaw
+RemoteControlCalibration|||Throttle
+RemoteControlCalibration|||Extension Controls
+RemoteControlCalibration|||Aux 1
+RemoteControlCalibration|||Aux 2
+RemoteControlCalibration|||Aux 3
+RemoteControlCalibration|||Aux 4
+RemoteControlCalibration|||Aux 5
+RemoteControlCalibration|||Aux 6
+RemoteControlCalibration|||Mode 1
+RemoteControlCalibration|||Mode 2
+RemoteControlCalibration|||Mode 3
+RemoteControlCalibration|||Mode 4
+RemoteControlCalibration|||Centered Throttle
+RemoteControlCalibration|||Cancel
+RemoteControlCalibration|||Calibrate
+RemoteControlCalibration|||Joystick Not Ready
+RemoteControlCalibration|||%1 axes or more are needed to fly. Joystick is reporting %2 axes.
+RemoteControlCalibration|||Not Ready
+RemoteControlCalibration|||Please turn on RC transmitter.
+RemoteControlCalibration|||%1 channels or more are needed to fly.
+RemoteControlCalibration|||Zero Trims
+RemoteControlCalibration|||Before calibrating you should zero all your trims and subtrims. Click Ok to start Calibration.
+
+%1
+RemoteControlCalibration|||Please ensure all motor power is disconnected AND all props are removed from the vehicle.
+RemoteControlCalibrationController|||* Lower the Throttle stick all the way down as shown in diagram
+* Please ensure all motor power is disconnected AND all props are removed from the vehicle.
+* Click Next to continue
+RemoteControlCalibrationController|||* Center all sticks as shown in diagram.
+* Please ensure all motor power is disconnected from the vehicle.
+* Click Next to continue
+RemoteControlCalibrationController|||Move the Throttle stick all the way up and hold it there...
+RemoteControlCalibrationController|||Move the Throttle stick all the way down and leave it there...
+RemoteControlCalibrationController|||Move the Yaw stick all the way to the left and hold it there...
+RemoteControlCalibrationController|||Move the Yaw stick all the way to the right and hold it there...
+RemoteControlCalibrationController|||Move the Roll stick all the way to the left and hold it there...
+RemoteControlCalibrationController|||Move the Roll stick all the way to the right and hold it there...
+RemoteControlCalibrationController|||Move the Pitch stick all the way down and hold it there...
+RemoteControlCalibrationController|||Move the Pitch stick all the way up and hold it there...
+RemoteControlCalibrationController|||Allow the Pitch stick to move back to center...
+RemoteControlCalibrationController|||Move the %1 Extension stick to its high value position and hold it there...
+RemoteControlCalibrationController|||Move the %1 Extension stick to its low value position and hold it there...
+RemoteControlCalibrationController|||Move all the transmitter switches and/or dials back and forth to their extreme positions.
+RemoteControlCalibrationController|||All settings have been captured. Click Next to write the new parameters to your board.
+RemoteControlCalibrationController|||Pitch
+RemoteControlCalibrationController|||Roll
+RemoteControlCalibrationController|||Aux 1
+RemoteControlCalibrationController|||Aux 2
+RemoteControlCalibrationController|||Aux 3
+RemoteControlCalibrationController|||Aux 4
+RemoteControlCalibrationController|||Aux 5
+RemoteControlCalibrationController|||Aux 6
+RemoteControlCalibrationController|||Unknown
+RemoteControlCalibrationController|||Next
+RemoteControlCalibrationController|||Calibrate
+RemoteControlCalibrationController|||Yaw
+RemoteControlCalibrationController|||Throttle
+RemoteControlCalibrationController|||Aux1 Extension
+RemoteControlCalibrationController|||Aux2 Extension
+RemoteControlCalibrationController|||Aux3 Extension
+RemoteControlCalibrationController|||Aux4 Extension
+RemoteControlCalibrationController|||Aux5 Extension
+RemoteControlCalibrationController|||Aux6 Extension
+RemoteControlCalibrationController|||Pitch Extension
+RemoteControlCalibrationController|||Roll Extension
+RemoteControlChannelMonitor|||Raw Channel Monitor
+RemoteControlChannelValueDisplay|||Not Mapped
+RemoteIDGpsLocation|||NMEA External GPS
+RemoteIDGpsLocation|||Device
+RemoteIDGpsLocation|||Disabled
+RemoteIDGpsLocation|||UDP Port
+RemoteIDGpsLocation|||Serial <none available>
+RemoteIDGpsLocation|||Baudrate
+RemoteIDIndicatorPage|||RemoteID Status
+RemoteIDIndicatorPage|||ARM STATUS
+RemoteIDIndicatorPage|||RID COMMS
+RemoteIDIndicatorPage|||NOT CONNECTED
+RemoteIDIndicatorPage|||GCS GPS
+RemoteIDIndicatorPage|||BASIC ID
+RemoteIDIndicatorPage|||OPERATOR ID
+RemoteIDIndicatorPage|||EMERGENCY HAS BEEN DECLARED, Press and Hold for 3 seconds to cancel
+RemoteIDIndicatorPage|||Press and Hold below button to declare emergency
+RemoteIDIndicatorPage|||Clear Emergency
+RemoteIDIndicatorPage|||EMERGENCY
+RemoteIDIndicatorPage|||Arm Status Error
+RemoteIDIndicatorPage|||Self ID
+RemoteIDIndicatorPage|||If an emergency is declared, Emergency Text will be broadcast even if Broadcast setting is not enabled.
+RemoteIDIndicatorPage|||Broadcast
+RemoteIDIndicatorPage|||Broadcast Message
+RemoteIDIndicatorPage|||Remote ID
+RemoteIDIndicatorPage|||Configure
+SHP|||File is not a .shp file: %1
+SHP|||File not found: %1
+SHP|||Unsupported projection: %1. Supported projections are: WGS84 (GEOGCS["GCS_WGS_1984"]) and UTM (PROJCS["WGS_1984_UTM_Zone_##N/S"]). Convert your shapefile to WGS84 using QGIS or ogr2ogr.
+SHP|||Unable to parse projection from PRJ file. Supported projections are: WGS84 (GEOGCS["GCS_WGS_1984"]) and UTM (PROJCS["WGS_1984_UTM_Zone_##N/S"]).
+SHP|||No entities found.
+SHP|||No valid polygons found.
+SHP|||No valid polylines found.
+SHP|||No valid points found.
+SHP|||UTM projection is not in supported format. Must be PROJCS["WGS_1984_UTM_Zone_##N/S
+SHP|||SHPOpen failed.
+SHP|||No supported types found.
+SHPFileHelper|||PRJ file open failed: %1
+SHPFileHelper|||File contains %1, expected Polygon.
+SHPFileHelper|||File contains %1, expected Arc.
+SHPFileHelper|||File contains %1, expected Point.
+SafetyComponent|||Configure failsafe actions, geofence, return to launch, and land mode settings.
+SafetyComponentSummary|||RC/Joystick Loss Failsafe
+SafetyComponentSummary|||RC/Joystick Loss Timeout
+ScriptingComponent|||Lua Scripts (*.lua)
+ScriptingComponent|||All Files (*)
+ScriptingComponent|||Upload succeeded: %1
+ScriptingComponent|||Download succeeded: %1
+ScriptingComponent|||Delete succeeded: %1
+ScriptingComponent|||Enable Scripting
+ScriptingComponent|||Upload
+ScriptingComponent|||Download %1
+ScriptingComponent|||Are you sure you want to delete the script "%1"? This action cannot be undone.
+ScriptingComponent|||Delete Lua Script
+ScriptingComponent|||Delete failed
+ScriptingComponent|||Lua Delete
+ScriptingComponent|||Cancel Operation
+ScriptingComponent|||Transferring... %1%
+ScriptingComponent|||Select Lua script to upload
+ScriptingComponent|||Upload failed
+ScriptingComponent|||Lua Upload
+ScriptingComponent|||Save Lua Script
+ScriptingComponent|||Download failed
+ScriptingComponent|||Lua Download
+ScriptingComponent|||Scripting is not supported by this version of firmware.
+ScriptingComponent|||Scripting
+ScriptingComponent|||Provides access to onboard script management.
+SelectViewDropdown|||Fly
+SelectViewDropdown|||Plan
+SelectViewDropdown|||Analyze
+SelectViewDropdown|||Configure
+SelectViewDropdown|||Settings
+SelectViewDropdown|||Close
+SelectViewDropdown|||%1 Version
+SensorsComponent|||Configure and calibrate gyroscope, accelerometer, magnetometer, and airspeed sensors.
+SensorsComponent|||Compass
+SensorsComponent|||Gyroscope
+SensorsComponent|||Accelerometer
+SensorsComponent|||Level Horizon
+SensorsComponent|||Airspeed
+SensorsComponent|||Orientations
+SensorsComponentController|||Reset successful
+SensorsComponentController|||Reset failed
+SensorsSetup|||For Compass calibration you will need to rotate your vehicle through a number of positions.
+SensorsSetup|||For Gyroscope calibration you will need to place your vehicle on a surface and leave it still.
+SensorsSetup|||For Accelerometer calibration you will need to place your vehicle on all six sides on a perfectly level surface and hold it still in each orientation for a few seconds.
+SensorsSetup|||To level the horizon you need to place the vehicle in its level flight position and leave still.
+SensorsSetup|||Complete or cancel the current calibration first
+SensorsSetup|||Autopilot Orientation
+SensorsSetup|||ROTATION_NONE indicates component points in direction of flight.
+SensorsSetup|||Click Ok to start calibration.
+SensorsSetup|||Reboot the vehicle prior to flight.
+SensorsSetup|||Adjust orientations as needed.
+
+ROTATION_NONE indicates component points in direction of flight.
+SensorsSetup|||Mag %1 Orientation
+SensorsSetup|||Orientations
+SensorsSetup|||Calibrate Gyroscope
+SensorsSetup|||Factory Reset
+SerialLink|||Serial Link Error
+SerialLink|||Link %1: (Port: %2) %3
+SerialSettings|||Serial Port
+SerialSettings|||None Available
+SerialSettings|||Baud Rate
+SerialSettings|||Custom
+SerialSettings|||Custom Baud Rate
+SerialSettings|||Advanced Settings
+SerialSettings|||Force DTR Low
+SerialSettings|||Parity
+SerialSettings|||Data Bits
+SerialSettings|||Stop Bits
+SerialWorker|||Not connecting to a bootloader
+SerialWorker|||Could not open port: %1
+SerialWorker|||Data to Send is Empty
+SerialWorker|||Port is not Connected
+SerialWorker|||Port is not Writable
+SerialWorker|||Could Not Send Data - Write Failed: %1
+SerialWorker|||Could Not Send Data - Write Returned 0 Bytes
+SetupPage|||Disabled while the vehicle is %1
+ShapeFileHelper|||Unsupported file type. Only %1 and %2 are supported.
+ShapeFileHelper|||KML Files (*%1)
+ShapeFileHelper|||KML/SHP Files (*%1 *%2)
+SigningIndicator|||MAVLink Signing
+SigningIndicator|||Status:
+SigningIndicator|||No Vehicle
+SigningIndicator|||Active
+SigningIndicator|||Inactive
+SigningIndicator|||Active Key:
+SigningIndicator|||None
+SigningIndicator|||Saved Keys:
+SigningKeyManager|||MAVLink 2 Signing
+SigningKeyManager|||Signing keys should only be sent to the vehicle over secure links.
+SigningKeyManager|||Add Signing Key
+SigningKeyManager|||Key Name
+SigningKeyManager|||Enter a friendly name
+SigningKeyManager|||Passphrase
+SigningKeyManager|||Enter passphrase
+SigningKeyManager|||Signing Status
+SigningKeyManager|||Active
+SigningKeyManager|||Inactive
+SigningKeyManager|||Not Connected
+SigningKeyManager|||Active Key
+SigningKeyManager|||None
+SigningKeyManager|||Enable
+SigningKeyManager|||Disable
+SigningKeyManager|||Delete
+SigningKeyManager|||Delete Signing Key
+SigningKeyManager|||Are you sure you want to delete '%1'? If a vehicle still has this key configured, you will no longer be able to communicate with it over a signed connection.
+SigningKeyManager|||No keys configured
+SigningKeyManager|||Add Key
+SimpleItemEditor|||Move '%1' %2 to the %3 location. %4
+SimpleItemEditor|||Transition Direction
+SimpleItemEditor|||Takeoff
+SimpleItemEditor|||Ensure distance from launch to transition direction is far enough to complete transition.
+SimpleItemEditor|||Alt Frame
+SimpleItemEditor|||Altitude%1
+SimpleItemEditor||| (%1)
+SimpleItemEditor|||Actual AMSL alt sent: %1 %2
+SimpleMissionItem|||Transition Direction
+SimpleMissionItem|||Loiter
+SimulatedCameraControl|||Time lapse capture not supported by this camera
+StatusTextHandler|||EMERGENCY
+StatusTextHandler|||ALERT
+StatusTextHandler|||Critical
+StatusTextHandler|||Error
+StatusTextHandler|||Warning
+StatusTextHandler|||Notice
+StatusTextHandler|||Info
+StatusTextHandler|||Debug
+StatusTextHandler||| ... 
+SysStatusSensorInfo|||Error
+SysStatusSensorInfo|||Normal
+SysStatusSensorInfo|||Disabled
+SyslinkComponent|||Address in hex. Default is E7E7E7E7E7.
+SyslinkComponent|||Restore Defaults
+TCPLink|||TCP Link Error
+TCPLink|||Link %1: (Host: %2 Port: %3) %4
+TCPWorker|||Connection Failed: Host address is empty
+TCPWorker|||Connection Failed: %1
+TCPWorker|||Data to Send is Empty
+TCPWorker|||Socket is not connected
+TCPWorker|||Could Not Send Data - Write Failed: %1
+TCPWorker|||Could Not Send Data - Write Returned 0 Bytes
+TakeoffItemMapVisual|||Home
+TcpSettings|||Server Address
+TcpSettings|||localhost or 192.168.1.1
+TcpSettings|||Port
+TcpSettings|||5760
+TcpSettings|||You can enter an IP address (e.g. 192.168.1.1) or hostname (e.g. my-drone.local)
+TelemetryRSSIIndicator|||dBm
+TerrainQueryCoordinator|||Set Home failed, terrain data not available for selected coordinate
+ToolIndicatorPage|||Waiting for parameters...
+ToolIndicatorPage|||Parameters not available
+TransectStyleComplexItemEditor|||Done
+TransectStyleComplexItemEditor|||WARNING: Photo interval is below minimum interval (%1 secs) supported by camera.
+TransectStyleComplexItemEditor|||Altitude
+TransectStyleComplexItemEditor|||Trigger Dist
+TransectStyleComplexItemEditor|||Spacing
+TransectStyleComplexItemEditor|||Rotate Entry Point
+TransectStyleComplexItemEditor|||Statistics
+TransectStyleComplexItemEditor|||Presets
+TransectStyleComplexItemEditor|||Apply Preset
+TransectStyleComplexItemEditor|||Delete Preset
+TransectStyleComplexItemEditor|||Are you sure you want to delete '%1' preset?
+TransectStyleComplexItemEditor|||Save Settings As New Preset
+TransectStyleComplexItemEditor|||Save Preset
+TransectStyleComplexItemEditor|||Save the current settings as a named preset.
+TransectStyleComplexItemEditor|||Preset Name
+TransectStyleComplexItemEditor|||Enter preset name
+TransectStyleComplexItemEditor|||Preset name cannot be blank.
+TransectStyleComplexItemEditor|||Preset name cannot include the "/" character.
+TransectStyleComplexItemTerrainFollow|||Tolerance
+TransectStyleComplexItemTerrainFollow|||Max Climb Rate
+TransectStyleComplexItemTerrainFollow|||Max Descent Rate
+TransformEditor|||Offset Mission
+TransformEditor|||East
+TransformEditor|||North
+TransformEditor|||Up
+TransformEditor|||Also move takeoff items
+TransformEditor|||Also move landing items
+TransformEditor|||Note: Home altitude is not modified.
+TransformEditor|||Apply Offset
+TransformEditor|||Reposition Mission
+TransformEditor|||Home position must be set to reposition the mission.
+TransformEditor|||Coordinate System
+TransformEditor|||Geographic
+TransformEditor|||Universal Transverse Mercator
+TransformEditor|||Military Grid Reference
+TransformEditor|||Vehicle Position
+TransformEditor|||Latitude
+TransformEditor|||Longitude
+TransformEditor|||Move to Position
+TransformEditor|||Zone
+TransformEditor|||Hemisphere
+TransformEditor|||Easting
+TransformEditor|||Northing
+TransformEditor|||MGRS
+TransformEditor|||Move to Vehicle Position
+TransformEditor|||Rotate Mission
+TransformEditor|||Home position must be set to rotate the mission.
+TransformEditor|||Clockwise
+TransformEditor|||Note: Complex items are rotated by moving their reference coordinate: their geometry and orientation are not changed.
+TransformEditor|||Apply Rotation
+UDPLink|||Link %1: %2
+UDPWorker|||Failed to bind UDP socket to port
+UDPWorker|||Could Not Send Data - Link is Disconnected!
+UDPWorker|||Could Not Read Data - Link is Disconnected!
+UDPWorker|||Could Not Read Data - No Data Available!
+UdpSettings|||Note: For best perfomance, please disable AutoConnect to UDP devices on the General page.
+UdpSettings|||Port
+UdpSettings|||Server Addresses (optional)
+UdpSettings|||Example: 127.0.0.1:14550
+UdpSettings|||Add Server
+UdpTransport|||UDP payload too large (%1 bytes), dropped
+UdpTransport|||DNS resolution failed for '%1': %2
+UnitsSettings|||Feet
+UnitsSettings|||Meters
+UnitsSettings|||Horizontal Distance
+UnitsSettings|||Display unit for horizontal distances and ranges.
+UnitsSettings|||Vertical Distance
+UnitsSettings|||Display unit for altitudes and vertical heights.
+UnitsSettings|||SquareFeet
+UnitsSettings|||SquareMeters
+UnitsSettings|||SquareKilometers
+UnitsSettings|||Hectares
+UnitsSettings|||Acres
+UnitsSettings|||SquareMiles
+UnitsSettings|||Area
+UnitsSettings|||Display unit for area measurements.
+UnitsSettings|||Knots
+UnitsSettings|||Speed
+UnitsSettings|||Display unit for speed and velocity values.
+UnitsSettings|||Celsius
+UnitsSettings|||Fahrenheit
+UnitsSettings|||Temperature
+UnitsSettings|||Display unit for temperature readings.
+UnitsSettings|||Grams
+UnitsSettings|||Kilograms
+UnitsSettings|||Ounces
+UnitsSettings|||Pounds
+UnitsSettings|||Weight
+VTOLLandingComplexItem|||VTOL Landing
+VTOLLandingComplexItem|||Alternate Landing
+VTOLLandingPatternEditor|||Final approach
+VTOLLandingPatternEditor|||Use loiter to altitude
+VTOLLandingPatternEditor|||* Avoid tailwind on approach to land.
+VTOLLandingPatternEditor|||* Ensure landing distance is enough to complete transition.
+VTOLLandingPatternMapVisual|||Approach
+Vehicle|||battery %1 level low
+Vehicle|||battery %1 level is critical
+Vehicle|||battery %1 level emergency
+Vehicle|||battery %1 failed
+Vehicle|||battery %1 unhealthy
+Vehicle|||warning
+Vehicle|||Vehicle %1: 
+Vehicle|||minimum altitude
+Vehicle|||maximum altitude
+Vehicle|||boundary
+Vehicle|||fence breached
+Vehicle|||Waiting for previous operator control request
+Vehicle|||No response to operator control request
+Vehicle|||Vehicle %1 
+Vehicle|||Vehicle reboot failed.
+Vehicle|||Change Heading not supported by Vehicle.
+Vehicle Class|||Airship
+Vehicle Class|||Fixed Wing
+Vehicle Class|||Rover-Boat
+Vehicle Class|||Sub
+Vehicle Class|||Spacecraft
+Vehicle Class|||Multi-Rotor
+Vehicle Class|||VTOL
+Vehicle Class|||Generic
+Vehicle Class|||Unknown
+VehicleCameraControl|||Timelapse photo capture is not supported on cameras without still capture capability
+VehicleConfigView|||This operation cannot be performed while the vehicle is armed.
+VehicleConfigView|||missing message panel text
+VehicleConfigView|||%1 setup must be completed prior to %2 setup.
+VehicleConfigView|||%1 does not currently support configuration of your vehicle. 
+VehicleConfigView|||Vehicle configuration pages will display after you connect your vehicle and parameters have been downloaded.
+VehicleConfigView|||Parameter download was skipped because the vehicle is flying. Configuration pages will be available after parameters are downloaded.
+VehicleConfigView|||Waiting for vehicle parameters to download…
+VehicleConfigView|||Download Parameters
+VehicleConfigView|||Vehicle did not return the full parameter list. 
+VehicleConfigView|||As a result, the configuration pages are not available.
+VehicleConfigView|||Search configuration...
+VehicleConfigView|||Summary
+VehicleConfigView|||Optical Flow
+VehicleConfigView|||Parameters
+VehicleConfigView|||Firmware
+VehicleLinkManager|||%1Communication regained on %2 link
+VehicleLinkManager|||primary
+VehicleLinkManager|||secondary
+VehicleLinkManager|||%1Communication regained
+VehicleLinkManager|||%1Switching communication to new primary link
+VehicleLinkManager|||%1Communication lost on %2 link.
+VehicleLinkManager|||%1Switching communication to secondary link.
+VehicleLinkManager|||%1Communication lost
+VehicleLinkManager|||Comm Lost
+VehicleMessageList|||No Messages
+VehicleMessageList|||Edit Parameter
+VehicleSummary|||Your vehicle configuration summary appears below. Select components on the left to review or fine-tune settings.
+VehicleSummary|||WARNING: Configuration tasks remain before this vehicle is ready to fly. Open the red-marked components on the left to finish setup.
+VibrationPage|||Analyze vibration associated with your vehicle.
+VibrationPage|||X (%1)
+VibrationPage|||Y (%1)
+VibrationPage|||Z (%1)
+VibrationPage|||Accel 1: %1
+VibrationPage|||Accel 2: %1
+VibrationPage|||Accel 3: %1
+VibrationPage|||Clip count
+VibrationPage|||Not Available
+VideoSettings|||No Video Available
+VideoSettings|||Video Stream Disabled
+VideoSettings|||RTSP Video Stream
+VideoSettings|||UDP h.264 Video Stream
+VideoSettings|||UDP h.265 Video Stream
+VideoSettings|||TCP-MPEG2 Video Stream
+VideoSettings|||MPEG-TS Video Stream
+VideoSettings|||3DR Solo (requires restart)
+VideoSettings|||Parrot Discovery
+VideoSettings|||Yuneec Mantis G
+VideoSettings|||Herelink AirUnit
+VideoSettings|||Herelink Hotspot
+Viewer3DModel|||Downloading Imageries: 
+Viewer3DProgressBar|||Progress
+Viewer3DShowAction|||Fly
+Viewer3DShowAction|||3D View
+Viewer3DVehicleItems|||L
+Viewer3DVehicleItems|||T
+Viewer3DVehicleItems|||W
+Viewer3DVehicleItems|||R
+Viewer3DVehicleItems|||null
+main|||You are running %1 as root. You should not do this since it will cause other issues with %1. %1 will now exit.
+main|||A second instance of %1 is already running. Please close the other instance and try again.
+main|||MAVLink GCS system id.
+main|||id
+main|||Clear stored application settings.
+main|||Clear parameter and airframe caches.
+main|||Enable logging with optional rules string.
+main|||rules
+main|||Log to console.
+main|||Initialize subsystems and exit.
+main|||Run unit tests (optional filter value).
+main|||filter
+main|||Stress unit tests.
+main|||count
+main|||Output test results to file (JUnit XML format).
+main|||file
+main|||Filter tests by label (unit, integration, vehicle, missionmanager, etc.).
+main|||labels
+main|||List available unit tests and exit.
+main|||Run with mobile-style UI.
+main|||Bypass single-instance guard.
+main|||Force software OpenGL.
+main|||Force Desktop OpenGL.
+main|||Disable Windows assert dialog boxes.
+main|||--unittest/--unittest-stress/--unittest-output/--list-tests options are only available in unittest builds.
+main|||--fake-mobile/--allow-multiple are not supported on mobile platforms.
+main|||--desktop/--no-windows-assert-ui are only supported on Windows.
+main|||--swrast is only supported on Windows and macOS.
+main|||Unknown options: %1
+main|||Unexpected positional arguments: %1
+main|||Invalid System ID (must be 1-255): %1
+main|||Invalid stress test count (must be > 0): %1
