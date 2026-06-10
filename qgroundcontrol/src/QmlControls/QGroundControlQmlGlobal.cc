@@ -16,6 +16,7 @@
 #include "MissionCommandTree.h"
 #include "SystemResourceMonitor.h"
 #include "ScriptRunner.h"
+#include "AIChatService.h"
 #include "VideoManager.h"
 #include "MultiVehicleManager.h"
 #include "LoggingCategoryModel.h"
@@ -46,6 +47,7 @@ QGroundControlQmlGlobal::QGroundControlQmlGlobal(QObject *parent)
     , _ntripManager(NTRIPManager::instance())
     , _systemResourceMonitor(SystemResourceMonitor::instance())
     , _scriptRunner(ScriptRunner::instance())
+    , _aiChatService(AIChatService::instance())
     , _qgcPositionManager(QGCPositionManager::instance())
     , _missionCommandTree(MissionCommandTree::instance())
     , _mavlinkSigningKeys(MAVLinkSigningKeys::instance())

@@ -18,4 +18,6 @@ target_sources(${CMAKE_PROJECT_NAME}
         ${CMAKE_CURRENT_SOURCE_DIR}/SystemResourceMonitor.cc
         ${CMAKE_CURRENT_SOURCE_DIR}/ScriptRunner.h
         ${CMAKE_CURRENT_SOURCE_DIR}/ScriptRunner.cc
+        ${CMAKE_CURRENT_SOURCE_DIR}/AIChatService.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/AIChatService.cc
 )
