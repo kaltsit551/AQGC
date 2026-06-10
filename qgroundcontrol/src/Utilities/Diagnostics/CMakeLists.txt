@@ -20,4 +20,8 @@ target_sources(${CMAKE_PROJECT_NAME}
         ${CMAKE_CURRENT_SOURCE_DIR}/ScriptRunner.cc
         ${CMAKE_CURRENT_SOURCE_DIR}/AIChatService.h
         ${CMAKE_CURRENT_SOURCE_DIR}/AIChatService.cc
+        ${CMAKE_CURRENT_SOURCE_DIR}/AIVehicleTools.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/AIVehicleTools.cc
+        ${CMAKE_CURRENT_SOURCE_DIR}/AISettingsTools.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/AISettingsTools.cc
 )

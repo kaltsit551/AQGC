@@ -531,6 +531,23 @@ Item {
                             text:           _aiChat ? _aiChat.model : ""
                             onEditingFinished: if (_aiChat) _aiChat.model = text
                         }
+
+                        QGCCheckBox {
+                            text:               qsTr("Allow AI to control the vehicle")
+                            checked:            _aiChat ? _aiChat.vehicleControlEnabled : false
+                            onClicked:          if (_aiChat) _aiChat.vehicleControlEnabled = checked
+                        }
+                        QGCCheckBox {
+                            text:               qsTr("Allow AI to change QGC settings")
+                            checked:            _aiChat ? _aiChat.settingsControlEnabled : false
+                            onClicked:          if (_aiChat) _aiChat.settingsControlEnabled = checked
+                        }
+                        QGCCheckBox {
+                            text:               qsTr("Confirm before each command")
+                            visible:            _aiChat && (_aiChat.vehicleControlEnabled || _aiChat.settingsControlEnabled)
+                            checked:            _aiChat ? _aiChat.confirmActions : true
+                            onClicked:          if (_aiChat) _aiChat.confirmActions = checked
+                        }
                     }
                 }
                 // __AI_CHAT_PLACEHOLDER__
@@ -608,6 +625,20 @@ Item {
                     }
                 }
             }
+        }
+    }
+
+    Connections {
+        target: _aiChat
+        function onConfirmationRequested(callId, toolName, argsText) {
+            var detail = argsText === "" ? toolName : (toolName + "(" + argsText + ")")
+            QGroundControl.showMessageDialog(
+                _root,
+                qsTr("AI Action"),
+                qsTr("The AI wants to execute:\n\n%1\n\nAllow this?").arg(detail),
+                Dialog.Cancel | Dialog.Ok,
+                function() { if (_aiChat) _aiChat.confirmToolCall(callId, true) },
+                function() { if (_aiChat) _aiChat.confirmToolCall(callId, false) })
         }
     }
 }
