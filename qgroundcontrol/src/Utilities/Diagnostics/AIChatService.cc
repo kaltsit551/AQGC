@@ -1,6 +1,7 @@
 #include "AIChatService.h"
 #include "AIVehicleTools.h"
 #include "AISettingsTools.h"
+#include "AIParameterTools.h"
 
 #include <QtCore/QApplicationStatic>
 #include <QtCore/QJsonDocument>
@@ -19,6 +20,7 @@ const char *kKeyBaseUrl    = "baseUrl";
 const char *kKeyModel      = "model";
 const char *kKeyControl    = "vehicleControlEnabled";
 const char *kKeySettings   = "settingsControlEnabled";
+const char *kKeyParameter  = "parameterControlEnabled";
 const char *kKeyConfirm    = "confirmActions";
 const char *kDefaultBaseUrl = "https://api.openai.com/v1";
 const char *kDefaultModel   = "gpt-4o-mini";
@@ -28,6 +30,9 @@ const char *kSystemPrompt =
     "You can read the connected drone's live status and, when permitted, command it using the "
     "provided tools. You can also read and, when permitted, change a whitelisted subset of "
     "QGroundControl application settings (volume, theme, units, map source, fly-view options). "
+    "You can also read any flight controller parameter and, when permitted, change a whitelisted "
+    "subset of safe parameters; always read a parameter first to understand its meaning and range, "
+    "and treat parameter changes as high-risk. "
     "Always call get_vehicle_status before answering questions about the aircraft or before "
     "issuing a control command that depends on current state. When changing a setting, prefer "
     "reading it first (get_setting/list_settings) to learn its allowed values. Be concise. When a "
@@ -39,6 +44,7 @@ AIChatService::AIChatService(QObject *parent)
     , _networkManager(new QNetworkAccessManager(this))
     , _tools(new AIVehicleTools(this))
     , _settingsTools(new AISettingsTools(this))
+    , _paramTools(new AIParameterTools(this))
 {
     QSettings settings;
     settings.beginGroup(kSettingsGroup);
@@ -47,6 +53,7 @@ AIChatService::AIChatService(QObject *parent)
     _model   = settings.value(kKeyModel, QString::fromLatin1(kDefaultModel)).toString();
     _vehicleControlEnabled = settings.value(kKeyControl, false).toBool();
     _settingsControlEnabled = settings.value(kKeySettings, false).toBool();
+    _parameterControlEnabled = settings.value(kKeyParameter, false).toBool();
     _confirmActions = settings.value(kKeyConfirm, true).toBool();
     settings.endGroup();
 }
@@ -125,6 +132,19 @@ void AIChatService::setSettingsControlEnabled(bool enabled)
     settings.setValue(kKeySettings, _settingsControlEnabled);
     settings.endGroup();
     emit settingsControlEnabledChanged();
+}
+
+void AIChatService::setParameterControlEnabled(bool enabled)
+{
+    if (_parameterControlEnabled == enabled) {
+        return;
+    }
+    _parameterControlEnabled = enabled;
+    QSettings settings;
+    settings.beginGroup(kSettingsGroup);
+    settings.setValue(kKeyParameter, _parameterControlEnabled);
+    settings.endGroup();
+    emit parameterControlEnabledChanged();
 }
 
 void AIChatService::setConfirmActions(bool confirm)
@@ -234,6 +254,10 @@ void AIChatService::_startRequest()
     QJsonArray tools = AIVehicleTools::toolDefinitions(_vehicleControlEnabled);
     const QJsonArray settingsTools = AISettingsTools::toolDefinitions(_settingsControlEnabled);
     for (const QJsonValue &tool : settingsTools) {
+        tools.append(tool);
+    }
+    const QJsonArray paramTools = AIParameterTools::toolDefinitions(_parameterControlEnabled);
+    for (const QJsonValue &tool : paramTools) {
         tools.append(tool);
     }
     body[QStringLiteral("tools")] = tools;
@@ -388,11 +412,19 @@ QJsonObject AIChatService::_executeTool(const QString &name, const QJsonObject &
     if (AISettingsTools::isSettingsTool(name)) {
         return _settingsTools->execute(name, args);
     }
+    if (AIParameterTools::isParameterTool(name)) {
+        return _paramTools->execute(name, args);
+    }
     return _tools->execute(name, args);
 }
 
 bool AIChatService::_toolNeedsConfirmation(const QString &name) const
 {
+    // Flight controller parameter writes ALWAYS require confirmation, even if
+    // the global confirmActions toggle is off — they are the highest risk.
+    if (AIParameterTools::isWriteTool(name)) {
+        return true;
+    }
     if (!_confirmActions) {
         return false;
     }

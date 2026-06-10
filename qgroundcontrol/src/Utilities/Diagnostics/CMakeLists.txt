@@ -24,4 +24,6 @@ target_sources(${CMAKE_PROJECT_NAME}
         ${CMAKE_CURRENT_SOURCE_DIR}/AIVehicleTools.cc
         ${CMAKE_CURRENT_SOURCE_DIR}/AISettingsTools.h
         ${CMAKE_CURRENT_SOURCE_DIR}/AISettingsTools.cc
+        ${CMAKE_CURRENT_SOURCE_DIR}/AIParameterTools.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/AIParameterTools.cc
 )

@@ -543,6 +543,11 @@ Item {
                             onClicked:          if (_aiChat) _aiChat.settingsControlEnabled = checked
                         }
                         QGCCheckBox {
+                            text:               qsTr("Allow AI to change flight controller parameters (high risk)")
+                            checked:            _aiChat ? _aiChat.parameterControlEnabled : false
+                            onClicked:          if (_aiChat) _aiChat.parameterControlEnabled = checked
+                        }
+                        QGCCheckBox {
                             text:               qsTr("Confirm before each command")
                             visible:            _aiChat && (_aiChat.vehicleControlEnabled || _aiChat.settingsControlEnabled)
                             checked:            _aiChat ? _aiChat.confirmActions : true

@@ -11,6 +11,7 @@ class QNetworkAccessManager;
 class QNetworkReply;
 class AIVehicleTools;
 class AISettingsTools;
+class AIParameterTools;
 
 class AIChatService : public QObject
 {
@@ -25,6 +26,7 @@ class AIChatService : public QObject
     Q_PROPERTY(bool    busy         READ busy                               NOTIFY busyChanged)
     Q_PROPERTY(bool    vehicleControlEnabled READ vehicleControlEnabled WRITE setVehicleControlEnabled NOTIFY vehicleControlEnabledChanged)
     Q_PROPERTY(bool    settingsControlEnabled READ settingsControlEnabled WRITE setSettingsControlEnabled NOTIFY settingsControlEnabledChanged)
+    Q_PROPERTY(bool    parameterControlEnabled READ parameterControlEnabled WRITE setParameterControlEnabled NOTIFY parameterControlEnabledChanged)
     Q_PROPERTY(bool    confirmActions         READ confirmActions         WRITE setConfirmActions         NOTIFY confirmActionsChanged)
 
 public:
@@ -40,6 +42,7 @@ public:
     bool busy() const { return _busy; }
     bool vehicleControlEnabled() const { return _vehicleControlEnabled; }
     bool settingsControlEnabled() const { return _settingsControlEnabled; }
+    bool parameterControlEnabled() const { return _parameterControlEnabled; }
     bool confirmActions() const { return _confirmActions; }
 
     void setApiKey(const QString &apiKey);
@@ -47,6 +50,7 @@ public:
     void setModel(const QString &model);
     void setVehicleControlEnabled(bool enabled);
     void setSettingsControlEnabled(bool enabled);
+    void setParameterControlEnabled(bool enabled);
     void setConfirmActions(bool confirm);
 
     Q_INVOKABLE void sendMessage(const QString &text);
@@ -63,6 +67,7 @@ signals:
     void busyChanged();
     void vehicleControlEnabledChanged();
     void settingsControlEnabledChanged();
+    void parameterControlEnabledChanged();
     void confirmActionsChanged();
     /// Emitted when a control tool needs user confirmation before execution.
     void confirmationRequested(const QString &callId, const QString &toolName, const QString &argsText);
@@ -86,6 +91,7 @@ private:
     QNetworkReply *_reply = nullptr;
     AIVehicleTools *_tools = nullptr;
     AISettingsTools *_settingsTools = nullptr;
+    AIParameterTools *_paramTools = nullptr;
 
     QString _apiKey;
     QString _baseUrl;
@@ -94,6 +100,7 @@ private:
     bool _busy = false;
     bool _vehicleControlEnabled = false;
     bool _settingsControlEnabled = false;
+    bool _parameterControlEnabled = false;
     bool _confirmActions = true;
 
     // Full message history (user/assistant/tool), excluding the system prompt.
