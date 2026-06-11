@@ -7,6 +7,7 @@
 #include <QtCore/QJsonDocument>
 #include <QtCore/QJsonValue>
 #include <QtCore/QSettings>
+#include <QtCore/QVariantMap>
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkReply>
 #include <QtNetwork/QNetworkRequest>
@@ -164,6 +165,7 @@ void AIChatService::clearConversation()
 {
     _messages = QJsonArray();
     _conversation.clear();
+    _displayMessages.clear();
     emit conversationChanged();
 }
 
@@ -192,6 +194,50 @@ void AIChatService::_appendConversation(const QString &text)
     emit conversationChanged();
 }
 
+void AIChatService::_pushMessage(const QString &role, const QVariantMap &fields)
+{
+    QVariantMap msg = fields;
+    msg[QStringLiteral("role")] = role;
+    _displayMessages.append(msg);
+    emit conversationChanged();
+}
+
+void AIChatService::_pushUser(const QString &text)
+{
+    _pushMessage(QStringLiteral("user"), {{QStringLiteral("text"), text}});
+}
+
+void AIChatService::_pushAssistant(const QString &text)
+{
+    if (text.trimmed().isEmpty()) {
+        return;
+    }
+    _pushMessage(QStringLiteral("assistant"), {{QStringLiteral("text"), text}});
+}
+
+void AIChatService::_pushToolCall(const QString &name, const QString &argsText)
+{
+    _pushMessage(QStringLiteral("tool"), {
+        {QStringLiteral("toolName"), name},
+        {QStringLiteral("args"), argsText},
+    });
+}
+
+void AIChatService::_pushToolResult(const QString &resultJson)
+{
+    _pushMessage(QStringLiteral("toolResult"), {{QStringLiteral("result"), resultJson}});
+}
+
+void AIChatService::_pushError(const QString &text)
+{
+    _pushMessage(QStringLiteral("error"), {{QStringLiteral("text"), text}});
+}
+
+void AIChatService::_pushStatus(const QString &text)
+{
+    _pushMessage(QStringLiteral("status"), {{QStringLiteral("text"), text}});
+}
+
 QString AIChatService::_formatArgs(const QJsonObject &args) const
 {
     QStringList parts;
@@ -209,7 +255,7 @@ void AIChatService::sendMessage(const QString &text)
         return;
     }
     if (_apiKey.isEmpty()) {
-        _appendConversation(QStringLiteral("[Error] API Key is not configured.\n\n"));
+        _pushError(QStringLiteral("API Key is not configured."));
         return;
     }
 
@@ -218,7 +264,7 @@ void AIChatService::sendMessage(const QString &text)
     userMsg[QStringLiteral("content")] = trimmed;
     _messages.append(userMsg);
 
-    _appendConversation(QStringLiteral("You: ") + trimmed + QStringLiteral("\n\n"));
+    _pushUser(trimmed);
 
     _setBusy(true);
     _startRequest();
@@ -286,12 +332,12 @@ void AIChatService::_onFinished()
         if (message.isEmpty()) {
             message = QStringLiteral("Network error.");
         }
-        _appendConversation(QStringLiteral("[Error] ") + message + QStringLiteral("\n\n"));
+        _pushError(message);
         _setBusy(false);
         return;
     }
     if (netError == QNetworkReply::OperationCanceledError) {
-        _appendConversation(QStringLiteral("\n[Stopped]\n\n"));
+        _pushStatus(QStringLiteral("Stopped"));
         _setBusy(false);
         return;
     }
@@ -299,7 +345,7 @@ void AIChatService::_onFinished()
     QJsonParseError parseError;
     const QJsonDocument doc = QJsonDocument::fromJson(data, &parseError);
     if (parseError.error != QJsonParseError::NoError || !doc.isObject()) {
-        _appendConversation(QStringLiteral("[Error] Invalid response from server.\n\n"));
+        _pushError(QStringLiteral("Invalid response from server."));
         _setBusy(false);
         return;
     }
@@ -309,7 +355,7 @@ void AIChatService::_onFinished()
         // Surface API-level errors (e.g. auth, model not found).
         const QJsonObject errObj = doc.object().value(QStringLiteral("error")).toObject();
         const QString errMsg = errObj.value(QStringLiteral("message")).toString();
-        _appendConversation(QStringLiteral("[Error] ") + (errMsg.isEmpty() ? QStringLiteral("Empty response.") : errMsg) + QStringLiteral("\n\n"));
+        _pushError(errMsg.isEmpty() ? QStringLiteral("Empty response.") : errMsg);
         _setBusy(false);
         return;
     }
@@ -329,13 +375,13 @@ void AIChatService::_handleAssistantMessage(const QJsonObject &message)
 
     if (toolCalls.isEmpty()) {
         // Final natural-language answer.
-        _appendConversation(QStringLiteral("AI: ") + content + QStringLiteral("\n\n"));
+        _pushAssistant(content);
         _setBusy(false);
         return;
     }
 
     if (!content.isEmpty()) {
-        _appendConversation(QStringLiteral("AI: ") + content + QStringLiteral("\n"));
+        _pushAssistant(content);
     }
 
     _pendingToolCalls = toolCalls;
@@ -358,8 +404,7 @@ void AIChatService::_processToolCalls()
         }
 
         const QString argsText = _formatArgs(args);
-        _appendConversation(QStringLiteral("  [Tool] ") + name
-            + QStringLiteral("(") + argsText + QStringLiteral(")\n"));
+        _pushToolCall(name, argsText);
 
         // Control / write tools may need user confirmation before execution.
         if (_toolNeedsConfirmation(name)) {
@@ -441,7 +486,7 @@ void AIChatService::_appendToolResult(const QString &callId, const QString &name
     toolMsg[QStringLiteral("content")] = QString::fromUtf8(resultJson);
     _messages.append(toolMsg);
 
-    _appendConversation(QStringLiteral("  [Result] ") + QString::fromUtf8(resultJson) + QStringLiteral("\n"));
+    _pushToolResult(QString::fromUtf8(resultJson));
     Q_UNUSED(name)
 }
 

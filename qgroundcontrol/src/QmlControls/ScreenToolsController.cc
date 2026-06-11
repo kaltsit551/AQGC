@@ -70,7 +70,12 @@ QString ScreenToolsController::normalFontFamily()
         return QStringLiteral("NanumGothic");
     }
 
+#ifdef Q_OS_WIN
+    // Use Microsoft YaHei for a cleaner look with CJK text on Windows.
+    return QStringLiteral("Microsoft YaHei");
+#else
     return QStringLiteral("Open Sans");
+#endif
 }
 
 double ScreenToolsController::defaultFontDescent(int pointSize)

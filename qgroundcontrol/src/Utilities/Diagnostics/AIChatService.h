@@ -5,6 +5,7 @@
 #include <QtCore/QJsonObject>
 #include <QtCore/QObject>
 #include <QtCore/QString>
+#include <QtCore/QVariantList>
 #include <QtQmlIntegration/QtQmlIntegration>
 
 class QNetworkAccessManager;
@@ -23,6 +24,7 @@ class AIChatService : public QObject
     Q_PROPERTY(QString baseUrl      READ baseUrl        WRITE setBaseUrl    NOTIFY baseUrlChanged)
     Q_PROPERTY(QString model        READ model          WRITE setModel      NOTIFY modelChanged)
     Q_PROPERTY(QString conversation READ conversation                       NOTIFY conversationChanged)
+    Q_PROPERTY(QVariantList conversationModel READ conversationModel         NOTIFY conversationChanged)
     Q_PROPERTY(bool    busy         READ busy                               NOTIFY busyChanged)
     Q_PROPERTY(bool    vehicleControlEnabled READ vehicleControlEnabled WRITE setVehicleControlEnabled NOTIFY vehicleControlEnabledChanged)
     Q_PROPERTY(bool    settingsControlEnabled READ settingsControlEnabled WRITE setSettingsControlEnabled NOTIFY settingsControlEnabledChanged)
@@ -39,6 +41,7 @@ public:
     QString baseUrl() const { return _baseUrl; }
     QString model() const { return _model; }
     QString conversation() const { return _conversation; }
+    QVariantList conversationModel() const { return _displayMessages; }
     bool busy() const { return _busy; }
     bool vehicleControlEnabled() const { return _vehicleControlEnabled; }
     bool settingsControlEnabled() const { return _settingsControlEnabled; }
@@ -78,6 +81,13 @@ private slots:
 private:
     void _setBusy(bool busy);
     void _appendConversation(const QString &text);
+    void _pushMessage(const QString &role, const QVariantMap &fields);
+    void _pushUser(const QString &text);
+    void _pushAssistant(const QString &text);
+    void _pushToolCall(const QString &name, const QString &argsText);
+    void _pushToolResult(const QString &resultJson);
+    void _pushError(const QString &text);
+    void _pushStatus(const QString &text);
     void _startRequest();
     QJsonArray _buildMessages() const;
     void _handleAssistantMessage(const QJsonObject &message);
@@ -97,6 +107,7 @@ private:
     QString _baseUrl;
     QString _model;
     QString _conversation;
+    QVariantList _displayMessages;
     bool _busy = false;
     bool _vehicleControlEnabled = false;
     bool _settingsControlEnabled = false;

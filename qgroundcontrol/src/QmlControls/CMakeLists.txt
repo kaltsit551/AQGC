@@ -238,3 +238,14 @@ qt_add_resources(QGroundControlControlsModule instrument_value_icons
     BASE "${CMAKE_SOURCE_DIR}/resources/InstrumentValueIcons"
     FILES ${INSTRUMENT_VALUE_ICONS}
 )
+
+# AI chat panel icons (Lucide, ISC license). Separate prefix so they do not
+# appear in the FactValueGrid instrument icon picker.
+file(GLOB AI_CHAT_ICONS CONFIGURE_DEPENDS
+    "${CMAKE_SOURCE_DIR}/resources/AIChat/*.svg"
+)
+qt_add_resources(QGroundControlControlsModule ai_chat_icons
+    PREFIX "/AIChat"
+    BASE "${CMAKE_SOURCE_DIR}/resources/AIChat"
+    FILES ${AI_CHAT_ICONS}
+)

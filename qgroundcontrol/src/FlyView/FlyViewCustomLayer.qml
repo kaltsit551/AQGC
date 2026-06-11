@@ -26,12 +26,6 @@ Item {
     property real   _scriptPanelHeight:     ScreenTools.defaultFontPixelHeight * 18
     property var    _scriptRunner:          QGroundControl.scriptRunner
 
-    property bool   _aiPanelVisible:        false
-    property bool   _aiConfigVisible:       false
-    property real   _aiPanelWidth:          ScreenTools.defaultFontPixelHeight * 25
-    property real   _aiPanelHeight:         ScreenTools.defaultFontPixelHeight * 22
-    property var    _aiChat:                QGroundControl.aiChatService
-
     Component.onCompleted: {
         if (_preConfiguredPath !== "") {
             _imagePath = _preConfiguredPath
@@ -39,7 +33,6 @@ Item {
     }
 
     QGCPalette { id: qgcPal; colorGroupEnabled: true }
-
     QGCToolInsets {
         id:                     _toolInsets
         leftEdgeTopInset:       parentToolInsets.leftEdgeTopInset
@@ -73,16 +66,6 @@ Item {
         text:               qsTr("Script")
         visible:            !_scriptPanelVisible
         onClicked:          _scriptPanelVisible = true
-    }
-
-    QGCButton {
-        anchors.right:      parent.right
-        anchors.top:        parent.top
-        anchors.topMargin:  ScreenTools.defaultFontPixelHeight * 5
-        anchors.rightMargin: ScreenTools.defaultFontPixelWidth
-        text:               qsTr("AI")
-        visible:            !_aiPanelVisible
-        onClicked:          _aiPanelVisible = true
     }
 
     QGCFileDialog {
@@ -406,244 +389,7 @@ Item {
         }
     }
 
-    // __AI_PANEL_PLACEHOLDER__
-    QGCMovableItem {
-        id:             aiPanel
-        x:              ScreenTools.defaultFontPixelHeight * 11
-        y:              ScreenTools.defaultFontPixelHeight * 4
-        width:          _aiPanelWidth
-        height:         _aiPanelHeight
-        visible:        _aiPanelVisible
-        minimumWidth:   ScreenTools.defaultFontPixelHeight * 16
-        minimumHeight:  ScreenTools.defaultFontPixelHeight * 12
-
-        onResetRequested: {
-            x = ScreenTools.defaultFontPixelHeight * 11
-            y = ScreenTools.defaultFontPixelHeight * 4
-            tForm.xScale = 1
-            tForm.yScale = 1
-        }
-
-        Rectangle {
-            anchors.fill:   parent
-            color:          qgcPal.window
-            radius:         ScreenTools.defaultFontPixelHeight / 4
-            border.color:   qgcPal.groupBorder
-            border.width:   1
-
-            Column {
-                anchors.fill:       parent
-                anchors.margins:    1
-                spacing:            0
-                // __AI_BODY_PLACEHOLDER__
-                Rectangle {
-                    width:  parent.width
-                    height: ScreenTools.defaultFontPixelHeight * 1.5
-                    color:  qgcPal.windowShade
-                    radius: ScreenTools.defaultFontPixelHeight / 4
-
-                    Rectangle {
-                        anchors.left:   parent.left
-                        anchors.right:  parent.right
-                        anchors.bottom: parent.bottom
-                        height:         parent.radius
-                        color:          parent.color
-                    }
-
-                    RowLayout {
-                        anchors.fill:       parent
-                        anchors.leftMargin: ScreenTools.defaultFontPixelWidth * 0.5
-                        anchors.rightMargin: ScreenTools.defaultFontPixelWidth * 0.5
-
-                        QGCLabel {
-                            Layout.fillWidth:   true
-                            text:               qsTr("AI Chat")
-                            font.pointSize:     ScreenTools.smallFontPointSize
-                        }
-
-                        QGCColoredImage {
-                            Layout.preferredWidth:  ScreenTools.defaultFontPixelHeight
-                            Layout.preferredHeight: ScreenTools.defaultFontPixelHeight
-                            source:                 "/InstrumentValueIcons/cog.svg"
-                            color:                  _aiConfigVisible ? qgcPal.colorGreen : qgcPal.text
-                            fillMode:               Image.PreserveAspectFit
-                            MouseArea {
-                                anchors.fill: parent
-                                onClicked:    _aiConfigVisible = !_aiConfigVisible
-                            }
-                        }
-
-                        QGCColoredImage {
-                            Layout.preferredWidth:  ScreenTools.defaultFontPixelHeight
-                            Layout.preferredHeight: ScreenTools.defaultFontPixelHeight
-                            source:                 "/InstrumentValueIcons/close.svg"
-                            color:                  qgcPal.text
-                            fillMode:               Image.PreserveAspectFit
-                            MouseArea {
-                                anchors.fill: parent
-                                onClicked:    _aiPanelVisible = false
-                            }
-                        }
-                    }
-                }
-                // __AI_CONFIG_PLACEHOLDER__
-                Rectangle {
-                    width:      parent.width
-                    height:     _aiConfigVisible ? aiConfigColumn.height + ScreenTools.defaultFontPixelWidth : 0
-                    visible:    _aiConfigVisible
-                    color:      qgcPal.windowShadeDark
-                    clip:       true
-
-                    Column {
-                        id:                 aiConfigColumn
-                        width:              parent.width
-                        anchors.top:        parent.top
-                        anchors.topMargin:  ScreenTools.defaultFontPixelWidth / 2
-                        spacing:            ScreenTools.defaultFontPixelWidth / 2
-                        leftPadding:        ScreenTools.defaultFontPixelWidth / 2
-                        rightPadding:       ScreenTools.defaultFontPixelWidth / 2
-
-                        QGCLabel {
-                            text:           qsTr("Base URL")
-                            font.pointSize: ScreenTools.smallFontPointSize
-                        }
-                        QGCTextField {
-                            width:          parent.width - ScreenTools.defaultFontPixelWidth
-                            text:           _aiChat ? _aiChat.baseUrl : ""
-                            onEditingFinished: if (_aiChat) _aiChat.baseUrl = text
-                        }
-                        QGCLabel {
-                            text:           qsTr("API Key")
-                            font.pointSize: ScreenTools.smallFontPointSize
-                        }
-                        QGCTextField {
-                            width:          parent.width - ScreenTools.defaultFontPixelWidth
-                            echoMode:       TextInput.Password
-                            text:           _aiChat ? _aiChat.apiKey : ""
-                            onEditingFinished: if (_aiChat) _aiChat.apiKey = text
-                        }
-                        QGCLabel {
-                            text:           qsTr("Model")
-                            font.pointSize: ScreenTools.smallFontPointSize
-                        }
-                        QGCTextField {
-                            width:          parent.width - ScreenTools.defaultFontPixelWidth
-                            text:           _aiChat ? _aiChat.model : ""
-                            onEditingFinished: if (_aiChat) _aiChat.model = text
-                        }
-
-                        QGCCheckBox {
-                            text:               qsTr("Allow AI to control the vehicle")
-                            checked:            _aiChat ? _aiChat.vehicleControlEnabled : false
-                            onClicked:          if (_aiChat) _aiChat.vehicleControlEnabled = checked
-                        }
-                        QGCCheckBox {
-                            text:               qsTr("Allow AI to change QGC settings")
-                            checked:            _aiChat ? _aiChat.settingsControlEnabled : false
-                            onClicked:          if (_aiChat) _aiChat.settingsControlEnabled = checked
-                        }
-                        QGCCheckBox {
-                            text:               qsTr("Allow AI to change flight controller parameters (high risk)")
-                            checked:            _aiChat ? _aiChat.parameterControlEnabled : false
-                            onClicked:          if (_aiChat) _aiChat.parameterControlEnabled = checked
-                        }
-                        QGCCheckBox {
-                            text:               qsTr("Confirm before each command")
-                            visible:            _aiChat && (_aiChat.vehicleControlEnabled || _aiChat.settingsControlEnabled)
-                            checked:            _aiChat ? _aiChat.confirmActions : true
-                            onClicked:          if (_aiChat) _aiChat.confirmActions = checked
-                        }
-                    }
-                }
-                // __AI_CHAT_PLACEHOLDER__
-                Item {
-                    width:  parent.width
-                    height: parent.height
-                            - ScreenTools.defaultFontPixelHeight * 1.5
-                            - (_aiConfigVisible ? aiConfigColumn.height + ScreenTools.defaultFontPixelWidth : 0)
-                            - aiInputRow.height
-
-                    QGCFlickable {
-                        id:             aiFlickable
-                        anchors.fill:       parent
-                        anchors.margins:    ScreenTools.defaultFontPixelWidth / 2
-                        contentHeight:      aiConversation.height
-                        clip:               true
-
-                        QGCLabel {
-                            id:             aiConversation
-                            width:          parent.width
-                            text:           _aiChat ? _aiChat.conversation : ""
-                            wrapMode:       Text.Wrap
-                            font.pointSize: ScreenTools.smallFontPointSize
-                            onTextChanged:  aiFlickable.contentY = Math.max(0, aiConversation.height - aiFlickable.height)
-                        }
-                    }
-                }
-
-                Row {
-                    id:         aiInputRow
-                    width:      parent.width
-                    height:     ScreenTools.defaultFontPixelHeight * 1.8
-                    spacing:    ScreenTools.defaultFontPixelWidth / 2
-                    leftPadding: ScreenTools.defaultFontPixelWidth / 2
-                    rightPadding: ScreenTools.defaultFontPixelWidth / 2
-
-                    function sendCurrent() {
-                        if (_aiChat && !_aiChat.busy && aiInput.text.trim() !== "") {
-                            _aiChat.sendMessage(aiInput.text)
-                            aiInput.clear()
-                        }
-                    }
-
-                    QGCTextField {
-                        id:             aiInput
-                        width:          parent.width - sendButton.width - stopButton.width - clearButton.width
-                                        - ScreenTools.defaultFontPixelWidth * 2.5
-                        height:         parent.height * 0.9
-                        enabled:        _aiChat && !_aiChat.busy
-                        placeholderText: qsTr("Type a message...")
-                        onAccepted:     aiInputRow.sendCurrent()
-                    }
-
-                    QGCButton {
-                        id:         sendButton
-                        text:       qsTr("Send")
-                        height:     parent.height * 0.9
-                        enabled:    _aiChat && !_aiChat.busy
-                        onClicked:  aiInputRow.sendCurrent()
-                    }
-
-                    QGCButton {
-                        id:         stopButton
-                        text:       qsTr("Stop")
-                        height:     parent.height * 0.9
-                        enabled:    _aiChat && _aiChat.busy
-                        onClicked:  if (_aiChat) _aiChat.stop()
-                    }
-
-                    QGCButton {
-                        id:         clearButton
-                        text:       qsTr("Clear")
-                        height:     parent.height * 0.9
-                        onClicked:  if (_aiChat) _aiChat.clearConversation()
-                    }
-                }
-            }
-        }
-    }
-
-    Connections {
-        target: _aiChat
-        function onConfirmationRequested(callId, toolName, argsText) {
-            var detail = argsText === "" ? toolName : (toolName + "(" + argsText + ")")
-            QGroundControl.showMessageDialog(
-                _root,
-                qsTr("AI Action"),
-                qsTr("The AI wants to execute:\n\n%1\n\nAllow this?").arg(detail),
-                Dialog.Cancel | Dialog.Ok,
-                function() { if (_aiChat) _aiChat.confirmToolCall(callId, true) },
-                function() { if (_aiChat) _aiChat.confirmToolCall(callId, false) })
-        }
+    FlyViewAIChatPanel {
+        anchors.fill: parent
     }
 }
